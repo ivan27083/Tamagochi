@@ -46,6 +46,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\Items.cs" />
+    <Compile Include="Classes\Pet.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -172,6 +174,84 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\e1990341-no-bg-preview_carve.photos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tiger2-fotor-bg-remover-20240324193029.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\soap_action-transformed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shower_icon-fotor-bg-remover-20240323205053.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wash_action-fotor-bg-remover-20240323205041.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setting-fotor-bg-remover-2024032421319.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\water_action.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6f8bdaab-no-bg-preview %28carve.photos%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\game_fon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eat_fon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hospital_fon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\apple_action-fotor-bg-remover-20240323205115.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salat_action-fotor-bg-remover-20240323205128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\muffin_action-fotor-bg-remover-20240323205140.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hotdog_action-fotor-bg-remover-2024032320515.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chicken_action-fotor-bg-remover-20240323205151.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\band_action-fotor-bg-remover-20240323205432.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pill2_action.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pill_action-fotor-bg-remover-2024032320557.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pipetca_action-fotor-bg-remover-20240323205552.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe_action-fotor-bg-remover-20240323205516.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\football_action-fotor-bg-remover-20240323205422.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\basketball_action%27-fotor-bg-remover-20240323205352.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paint_action-fotor-bg-remover-20240323205337.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\game_action-fotor-bg-remover-20240323205343.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
