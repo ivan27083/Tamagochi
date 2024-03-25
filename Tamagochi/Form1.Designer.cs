@@ -33,6 +33,7 @@ namespace Tamagochi
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.btn_prev = new System.Windows.Forms.Button();
             this.btn_next = new System.Windows.Forms.Button();
             this.pb_health = new System.Windows.Forms.ProgressBar();
@@ -43,58 +44,67 @@ namespace Tamagochi
             this.btn_pets = new System.Windows.Forms.Button();
             this.pbox_hunger = new System.Windows.Forms.PictureBox();
             this.pbox_health = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.gb_1 = new System.Windows.Forms.GroupBox();
-            this.gb_2 = new System.Windows.Forms.GroupBox();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pb_pet = new System.Windows.Forms.PictureBox();
+            this.chicken_2_30 = new System.Windows.Forms.PictureBox();
+            this.syringe_3_25 = new System.Windows.Forms.PictureBox();
+            this.pipetca_3_15 = new System.Windows.Forms.PictureBox();
+            this.bluepill_3_10 = new System.Windows.Forms.PictureBox();
+            this.redpill_3_10 = new System.Windows.Forms.PictureBox();
+            this.band_3_5 = new System.Windows.Forms.PictureBox();
+            this.hotdog_2_20 = new System.Windows.Forms.PictureBox();
+            this.cake_2_10 = new System.Windows.Forms.PictureBox();
+            this.salat_2_15 = new System.Windows.Forms.PictureBox();
+            this.apple_2_10 = new System.Windows.Forms.PictureBox();
+            this.towel_1_5 = new System.Windows.Forms.PictureBox();
+            this.water_1_15 = new System.Windows.Forms.PictureBox();
+            this.sponge_1_15 = new System.Windows.Forms.PictureBox();
+            this.soap_1_10 = new System.Windows.Forms.PictureBox();
             this.btn_bath = new System.Windows.Forms.Button();
             this.btn_kitchen = new System.Windows.Forms.Button();
             this.btn_play = new System.Windows.Forms.Button();
             this.btn_heal = new System.Windows.Forms.Button();
-            this.gb_3 = new System.Windows.Forms.GroupBox();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.pictureBox12 = new System.Windows.Forms.PictureBox();
-            this.pictureBox13 = new System.Windows.Forms.PictureBox();
-            this.pictureBox14 = new System.Windows.Forms.PictureBox();
-            this.pictureBox15 = new System.Windows.Forms.PictureBox();
-            this.gb_4 = new System.Windows.Forms.GroupBox();
-            this.pictureBox17 = new System.Windows.Forms.PictureBox();
-            this.pictureBox18 = new System.Windows.Forms.PictureBox();
-            this.pictureBox19 = new System.Windows.Forms.PictureBox();
-            this.pictureBox20 = new System.Windows.Forms.PictureBox();
+            this.games_4_20 = new System.Windows.Forms.PictureBox();
+            this.paint_4_5 = new System.Windows.Forms.PictureBox();
+            this.basketball_4_10 = new System.Windows.Forms.PictureBox();
+            this.football_4_10 = new System.Windows.Forms.PictureBox();
+            this.tbc_menu = new System.Windows.Forms.TabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.timer = new System.Windows.Forms.Timer(this.components);
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.pbox_happiness = new System.Windows.Forms.PictureBox();
+            this.progressBar2 = new System.Windows.Forms.ProgressBar();
+            this.pbox_cleanliness = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbox_hunger)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbox_health)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.gb_1.SuspendLayout();
-            this.gb_2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            this.gb_3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
-            this.gb_4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_pet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chicken_2_30)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.syringe_3_25)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pipetca_3_15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bluepill_3_10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.redpill_3_10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.band_3_5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hotdog_2_20)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cake_2_10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.salat_2_15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.apple_2_10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.towel_1_5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.water_1_15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sponge_1_15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.soap_1_10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.games_4_20)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.paint_4_5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.basketball_4_10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.football_4_10)).BeginInit();
+            this.tbc_menu.SuspendLayout();
+            this.tabPage1.SuspendLayout();
+            this.tabPage2.SuspendLayout();
+            this.tabPage3.SuspendLayout();
+            this.tabPage4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox_happiness)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox_cleanliness)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_prev
@@ -133,7 +143,7 @@ namespace Tamagochi
             // pb_hunger
             // 
             this.pb_hunger.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.pb_hunger.Location = new System.Drawing.Point(933, 137);
+            this.pb_hunger.Location = new System.Drawing.Point(933, 109);
             this.pb_hunger.Name = "pb_hunger";
             this.pb_hunger.Size = new System.Drawing.Size(229, 25);
             this.pb_hunger.TabIndex = 7;
@@ -186,7 +196,7 @@ namespace Tamagochi
             this.pbox_hunger.BackColor = System.Drawing.Color.Transparent;
             this.pbox_hunger.BackgroundImage = global::Tamagochi.Properties.Resources.mea;
             this.pbox_hunger.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pbox_hunger.Location = new System.Drawing.Point(844, 126);
+            this.pbox_hunger.Location = new System.Drawing.Point(844, 98);
             this.pbox_hunger.Name = "pbox_hunger";
             this.pbox_hunger.Size = new System.Drawing.Size(57, 50);
             this.pbox_hunger.TabIndex = 5;
@@ -203,144 +213,185 @@ namespace Tamagochi
             this.pbox_health.TabIndex = 4;
             this.pbox_health.TabStop = false;
             // 
-            // pictureBox1
+            // pb_pet
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BackgroundImage = global::Tamagochi.Properties.Resources.tiger2_fotor_bg_remover_20240324193029;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(431, 250);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(341, 329);
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
+            this.pb_pet.BackColor = System.Drawing.Color.Transparent;
+            this.pb_pet.BackgroundImage = global::Tamagochi.Properties.Resources.dog;
+            this.pb_pet.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pb_pet.Location = new System.Drawing.Point(438, 262);
+            this.pb_pet.Name = "pb_pet";
+            this.pb_pet.Size = new System.Drawing.Size(341, 329);
+            this.pb_pet.TabIndex = 3;
+            this.pb_pet.TabStop = false;
+            this.pb_pet.DragEnter += new System.Windows.Forms.DragEventHandler(this.pet_DragEnter);
             // 
-            // gb_1
+            // chicken_2_30
             // 
-            this.gb_1.BackColor = System.Drawing.SystemColors.Control;
-            this.gb_1.Controls.Add(this.gb_2);
-            this.gb_1.Controls.Add(this.pictureBox6);
-            this.gb_1.Controls.Add(this.pictureBox5);
-            this.gb_1.Controls.Add(this.pictureBox4);
-            this.gb_1.Controls.Add(this.pictureBox3);
-            this.gb_1.Location = new System.Drawing.Point(236, 617);
-            this.gb_1.Name = "gb_1";
-            this.gb_1.Size = new System.Drawing.Size(751, 147);
-            this.gb_1.TabIndex = 13;
-            this.gb_1.TabStop = false;
+            this.chicken_2_30.BackColor = System.Drawing.Color.Transparent;
+            this.chicken_2_30.BackgroundImage = global::Tamagochi.Properties.Resources.chicken_action_fotor_bg_remover_20240323205151;
+            this.chicken_2_30.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.chicken_2_30.Location = new System.Drawing.Point(470, 6);
+            this.chicken_2_30.Name = "chicken_2_30";
+            this.chicken_2_30.Size = new System.Drawing.Size(110, 97);
+            this.chicken_2_30.TabIndex = 4;
+            this.chicken_2_30.TabStop = false;
+            this.chicken_2_30.MouseDown += new System.Windows.Forms.MouseEventHandler(this.item_MouseDown);
             // 
-            // gb_2
+            // syringe_3_25
             // 
-            this.gb_2.BackColor = System.Drawing.SystemColors.Control;
-            this.gb_2.Controls.Add(this.pictureBox10);
-            this.gb_2.Controls.Add(this.gb_3);
-            this.gb_2.Controls.Add(this.pictureBox2);
-            this.gb_2.Controls.Add(this.pictureBox7);
-            this.gb_2.Controls.Add(this.pictureBox8);
-            this.gb_2.Controls.Add(this.pictureBox9);
-            this.gb_2.Location = new System.Drawing.Point(0, 0);
-            this.gb_2.Name = "gb_2";
-            this.gb_2.Size = new System.Drawing.Size(751, 147);
-            this.gb_2.TabIndex = 14;
-            this.gb_2.TabStop = false;
+            this.syringe_3_25.BackColor = System.Drawing.Color.Transparent;
+            this.syringe_3_25.BackgroundImage = global::Tamagochi.Properties.Resources.syringe_action_fotor_bg_remover_20240323205516;
+            this.syringe_3_25.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.syringe_3_25.Location = new System.Drawing.Point(470, 8);
+            this.syringe_3_25.Name = "syringe_3_25";
+            this.syringe_3_25.Size = new System.Drawing.Size(110, 97);
+            this.syringe_3_25.TabIndex = 4;
+            this.syringe_3_25.TabStop = false;
+            this.syringe_3_25.MouseDown += new System.Windows.Forms.MouseEventHandler(this.item_MouseDown);
             // 
-            // pictureBox10
+            // pipetca_3_15
             // 
-            this.pictureBox10.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox10.BackgroundImage = global::Tamagochi.Properties.Resources.chicken_action_fotor_bg_remover_20240323205151;
-            this.pictureBox10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox10.Location = new System.Drawing.Point(497, 26);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(110, 97);
-            this.pictureBox10.TabIndex = 4;
-            this.pictureBox10.TabStop = false;
+            this.pipetca_3_15.BackColor = System.Drawing.Color.Transparent;
+            this.pipetca_3_15.BackgroundImage = global::Tamagochi.Properties.Resources.pipetca_action_fotor_bg_remover_20240323205552;
+            this.pipetca_3_15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pipetca_3_15.Location = new System.Drawing.Point(354, 8);
+            this.pipetca_3_15.Name = "pipetca_3_15";
+            this.pipetca_3_15.Size = new System.Drawing.Size(110, 97);
+            this.pipetca_3_15.TabIndex = 3;
+            this.pipetca_3_15.TabStop = false;
+            this.pipetca_3_15.MouseDown += new System.Windows.Forms.MouseEventHandler(this.item_MouseDown);
             // 
-            // pictureBox2
+            // bluepill_3_10
             // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.BackgroundImage = global::Tamagochi.Properties.Resources.hotdog_action_fotor_bg_remover_2024032320515;
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(381, 26);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(110, 97);
-            this.pictureBox2.TabIndex = 3;
-            this.pictureBox2.TabStop = false;
+            this.bluepill_3_10.BackColor = System.Drawing.Color.Transparent;
+            this.bluepill_3_10.BackgroundImage = global::Tamagochi.Properties.Resources.pill_action_fotor_bg_remover_2024032320557;
+            this.bluepill_3_10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bluepill_3_10.Location = new System.Drawing.Point(238, 7);
+            this.bluepill_3_10.Name = "bluepill_3_10";
+            this.bluepill_3_10.Size = new System.Drawing.Size(110, 98);
+            this.bluepill_3_10.TabIndex = 2;
+            this.bluepill_3_10.TabStop = false;
+            this.bluepill_3_10.MouseDown += new System.Windows.Forms.MouseEventHandler(this.item_MouseDown);
             // 
-            // pictureBox7
+            // redpill_3_10
             // 
-            this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox7.BackgroundImage = global::Tamagochi.Properties.Resources.muffin_action_fotor_bg_remover_20240323205140;
-            this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox7.Location = new System.Drawing.Point(265, 25);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(110, 98);
-            this.pictureBox7.TabIndex = 2;
-            this.pictureBox7.TabStop = false;
+            this.redpill_3_10.BackColor = System.Drawing.Color.Transparent;
+            this.redpill_3_10.BackgroundImage = global::Tamagochi.Properties.Resources.pill2_action1;
+            this.redpill_3_10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.redpill_3_10.Location = new System.Drawing.Point(122, 8);
+            this.redpill_3_10.Name = "redpill_3_10";
+            this.redpill_3_10.Size = new System.Drawing.Size(110, 97);
+            this.redpill_3_10.TabIndex = 1;
+            this.redpill_3_10.TabStop = false;
+            this.redpill_3_10.MouseDown += new System.Windows.Forms.MouseEventHandler(this.item_MouseDown);
             // 
-            // pictureBox8
+            // band_3_5
             // 
-            this.pictureBox8.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox8.BackgroundImage = global::Tamagochi.Properties.Resources.salat_action_fotor_bg_remover_20240323205128;
-            this.pictureBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox8.Location = new System.Drawing.Point(149, 26);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(110, 97);
-            this.pictureBox8.TabIndex = 1;
-            this.pictureBox8.TabStop = false;
+            this.band_3_5.BackColor = System.Drawing.Color.Transparent;
+            this.band_3_5.BackgroundImage = global::Tamagochi.Properties.Resources.band_action_fotor_bg_remover_20240323205432;
+            this.band_3_5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.band_3_5.Location = new System.Drawing.Point(6, 8);
+            this.band_3_5.Name = "band_3_5";
+            this.band_3_5.Size = new System.Drawing.Size(110, 97);
+            this.band_3_5.TabIndex = 0;
+            this.band_3_5.TabStop = false;
+            this.band_3_5.MouseDown += new System.Windows.Forms.MouseEventHandler(this.item_MouseDown);
             // 
-            // pictureBox9
+            // hotdog_2_20
             // 
-            this.pictureBox9.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox9.BackgroundImage = global::Tamagochi.Properties.Resources.apple_action_fotor_bg_remover_20240323205115;
-            this.pictureBox9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox9.Location = new System.Drawing.Point(33, 26);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(110, 97);
-            this.pictureBox9.TabIndex = 0;
-            this.pictureBox9.TabStop = false;
+            this.hotdog_2_20.BackColor = System.Drawing.Color.Transparent;
+            this.hotdog_2_20.BackgroundImage = global::Tamagochi.Properties.Resources.hotdog_action_fotor_bg_remover_2024032320515;
+            this.hotdog_2_20.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.hotdog_2_20.Location = new System.Drawing.Point(354, 6);
+            this.hotdog_2_20.Name = "hotdog_2_20";
+            this.hotdog_2_20.Size = new System.Drawing.Size(110, 97);
+            this.hotdog_2_20.TabIndex = 3;
+            this.hotdog_2_20.TabStop = false;
+            this.hotdog_2_20.MouseDown += new System.Windows.Forms.MouseEventHandler(this.item_MouseDown);
             // 
-            // pictureBox6
+            // cake_2_10
             // 
-            this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox6.BackgroundImage = global::Tamagochi.Properties.Resources._6f8bdaab_no_bg_preview__carve_photos_;
-            this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox6.Location = new System.Drawing.Point(381, 26);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(110, 97);
-            this.pictureBox6.TabIndex = 3;
-            this.pictureBox6.TabStop = false;
+            this.cake_2_10.BackColor = System.Drawing.Color.Transparent;
+            this.cake_2_10.BackgroundImage = global::Tamagochi.Properties.Resources.muffin_action_fotor_bg_remover_20240323205140;
+            this.cake_2_10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.cake_2_10.Location = new System.Drawing.Point(238, 5);
+            this.cake_2_10.Name = "cake_2_10";
+            this.cake_2_10.Size = new System.Drawing.Size(110, 98);
+            this.cake_2_10.TabIndex = 2;
+            this.cake_2_10.TabStop = false;
+            this.cake_2_10.MouseDown += new System.Windows.Forms.MouseEventHandler(this.item_MouseDown);
             // 
-            // pictureBox5
+            // salat_2_15
             // 
-            this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox5.BackgroundImage = global::Tamagochi.Properties.Resources.water_action;
-            this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox5.Location = new System.Drawing.Point(265, 30);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(96, 88);
-            this.pictureBox5.TabIndex = 2;
-            this.pictureBox5.TabStop = false;
+            this.salat_2_15.BackColor = System.Drawing.Color.Transparent;
+            this.salat_2_15.BackgroundImage = global::Tamagochi.Properties.Resources.salat_action_fotor_bg_remover_20240323205128;
+            this.salat_2_15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.salat_2_15.Location = new System.Drawing.Point(122, 6);
+            this.salat_2_15.Name = "salat_2_15";
+            this.salat_2_15.Size = new System.Drawing.Size(110, 97);
+            this.salat_2_15.TabIndex = 1;
+            this.salat_2_15.TabStop = false;
+            this.salat_2_15.MouseDown += new System.Windows.Forms.MouseEventHandler(this.item_MouseDown);
             // 
-            // pictureBox4
+            // apple_2_10
             // 
-            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox4.BackgroundImage = global::Tamagochi.Properties.Resources.wash_action_fotor_bg_remover_20240323205041;
-            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox4.Location = new System.Drawing.Point(149, 35);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(110, 80);
-            this.pictureBox4.TabIndex = 1;
-            this.pictureBox4.TabStop = false;
+            this.apple_2_10.BackColor = System.Drawing.Color.Transparent;
+            this.apple_2_10.BackgroundImage = global::Tamagochi.Properties.Resources.apple_action_fotor_bg_remover_20240323205115;
+            this.apple_2_10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.apple_2_10.Location = new System.Drawing.Point(6, 6);
+            this.apple_2_10.Name = "apple_2_10";
+            this.apple_2_10.Size = new System.Drawing.Size(110, 97);
+            this.apple_2_10.TabIndex = 0;
+            this.apple_2_10.TabStop = false;
+            this.apple_2_10.MouseDown += new System.Windows.Forms.MouseEventHandler(this.item_MouseDown);
             // 
-            // pictureBox3
+            // towel_1_5
             // 
-            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.BackgroundImage = global::Tamagochi.Properties.Resources.soap_action_transformed;
-            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox3.Location = new System.Drawing.Point(33, 26);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(110, 97);
-            this.pictureBox3.TabIndex = 0;
-            this.pictureBox3.TabStop = false;
+            this.towel_1_5.BackColor = System.Drawing.Color.Transparent;
+            this.towel_1_5.BackgroundImage = global::Tamagochi.Properties.Resources._6f8bdaab_no_bg_preview__carve_photos_;
+            this.towel_1_5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.towel_1_5.Location = new System.Drawing.Point(357, 7);
+            this.towel_1_5.Name = "towel_1_5";
+            this.towel_1_5.Size = new System.Drawing.Size(110, 97);
+            this.towel_1_5.TabIndex = 3;
+            this.towel_1_5.TabStop = false;
+            this.towel_1_5.MouseDown += new System.Windows.Forms.MouseEventHandler(this.item_MouseDown);
+            // 
+            // water_1_15
+            // 
+            this.water_1_15.BackColor = System.Drawing.Color.Transparent;
+            this.water_1_15.BackgroundImage = global::Tamagochi.Properties.Resources.water_action;
+            this.water_1_15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.water_1_15.Location = new System.Drawing.Point(241, 11);
+            this.water_1_15.Name = "water_1_15";
+            this.water_1_15.Size = new System.Drawing.Size(96, 88);
+            this.water_1_15.TabIndex = 2;
+            this.water_1_15.TabStop = false;
+            this.water_1_15.MouseDown += new System.Windows.Forms.MouseEventHandler(this.item_MouseDown);
+            // 
+            // sponge_1_15
+            // 
+            this.sponge_1_15.BackColor = System.Drawing.Color.Transparent;
+            this.sponge_1_15.BackgroundImage = global::Tamagochi.Properties.Resources.wash_action_fotor_bg_remover_20240323205041;
+            this.sponge_1_15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.sponge_1_15.Location = new System.Drawing.Point(125, 16);
+            this.sponge_1_15.Name = "sponge_1_15";
+            this.sponge_1_15.Size = new System.Drawing.Size(110, 80);
+            this.sponge_1_15.TabIndex = 1;
+            this.sponge_1_15.TabStop = false;
+            this.sponge_1_15.MouseDown += new System.Windows.Forms.MouseEventHandler(this.item_MouseDown);
+            // 
+            // soap_1_10
+            // 
+            this.soap_1_10.BackColor = System.Drawing.Color.Transparent;
+            this.soap_1_10.BackgroundImage = global::Tamagochi.Properties.Resources.soap_action_transformed;
+            this.soap_1_10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.soap_1_10.Location = new System.Drawing.Point(9, 7);
+            this.soap_1_10.Name = "soap_1_10";
+            this.soap_1_10.Size = new System.Drawing.Size(110, 97);
+            this.soap_1_10.TabIndex = 0;
+            this.soap_1_10.TabStop = false;
+            this.soap_1_10.MouseDown += new System.Windows.Forms.MouseEventHandler(this.item_MouseDown);
             // 
             // btn_bath
             // 
@@ -390,131 +441,166 @@ namespace Tamagochi
             this.btn_heal.UseVisualStyleBackColor = false;
             this.btn_heal.Click += new System.EventHandler(this.btn_heal_Click);
             // 
-            // gb_3
+            // games_4_20
             // 
-            this.gb_3.BackColor = System.Drawing.SystemColors.Control;
-            this.gb_3.Controls.Add(this.pictureBox11);
-            this.gb_3.Controls.Add(this.pictureBox12);
-            this.gb_3.Controls.Add(this.pictureBox13);
-            this.gb_3.Controls.Add(this.pictureBox14);
-            this.gb_3.Controls.Add(this.pictureBox15);
-            this.gb_3.Location = new System.Drawing.Point(0, 0);
-            this.gb_3.Name = "gb_3";
-            this.gb_3.Size = new System.Drawing.Size(751, 147);
-            this.gb_3.TabIndex = 18;
-            this.gb_3.TabStop = false;
+            this.games_4_20.BackColor = System.Drawing.Color.Transparent;
+            this.games_4_20.BackgroundImage = global::Tamagochi.Properties.Resources.game_action_fotor_bg_remover_20240323205343;
+            this.games_4_20.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.games_4_20.Location = new System.Drawing.Point(362, 8);
+            this.games_4_20.Name = "games_4_20";
+            this.games_4_20.Size = new System.Drawing.Size(140, 97);
+            this.games_4_20.TabIndex = 3;
+            this.games_4_20.TabStop = false;
+            this.games_4_20.MouseDown += new System.Windows.Forms.MouseEventHandler(this.item_MouseDown);
             // 
-            // pictureBox11
+            // paint_4_5
             // 
-            this.pictureBox11.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox11.BackgroundImage = global::Tamagochi.Properties.Resources.syringe_action_fotor_bg_remover_20240323205516;
-            this.pictureBox11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox11.Location = new System.Drawing.Point(497, 26);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(110, 97);
-            this.pictureBox11.TabIndex = 4;
-            this.pictureBox11.TabStop = false;
+            this.paint_4_5.BackColor = System.Drawing.Color.Transparent;
+            this.paint_4_5.BackgroundImage = global::Tamagochi.Properties.Resources.paint_action_fotor_bg_remover_20240323205337;
+            this.paint_4_5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.paint_4_5.Location = new System.Drawing.Point(246, 7);
+            this.paint_4_5.Name = "paint_4_5";
+            this.paint_4_5.Size = new System.Drawing.Size(110, 98);
+            this.paint_4_5.TabIndex = 2;
+            this.paint_4_5.TabStop = false;
+            this.paint_4_5.MouseDown += new System.Windows.Forms.MouseEventHandler(this.item_MouseDown);
             // 
-            // pictureBox12
+            // basketball_4_10
             // 
-            this.pictureBox12.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox12.BackgroundImage = global::Tamagochi.Properties.Resources.pipetca_action_fotor_bg_remover_20240323205552;
-            this.pictureBox12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox12.Location = new System.Drawing.Point(381, 26);
-            this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(110, 97);
-            this.pictureBox12.TabIndex = 3;
-            this.pictureBox12.TabStop = false;
+            this.basketball_4_10.BackColor = System.Drawing.Color.Transparent;
+            this.basketball_4_10.BackgroundImage = global::Tamagochi.Properties.Resources.basketball_action__fotor_bg_remover_20240323205352;
+            this.basketball_4_10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.basketball_4_10.Location = new System.Drawing.Point(130, 8);
+            this.basketball_4_10.Name = "basketball_4_10";
+            this.basketball_4_10.Size = new System.Drawing.Size(110, 97);
+            this.basketball_4_10.TabIndex = 1;
+            this.basketball_4_10.TabStop = false;
+            this.basketball_4_10.MouseDown += new System.Windows.Forms.MouseEventHandler(this.item_MouseDown);
             // 
-            // pictureBox13
+            // football_4_10
             // 
-            this.pictureBox13.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox13.BackgroundImage = global::Tamagochi.Properties.Resources.pill_action_fotor_bg_remover_2024032320557;
-            this.pictureBox13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox13.Location = new System.Drawing.Point(265, 25);
-            this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(110, 98);
-            this.pictureBox13.TabIndex = 2;
-            this.pictureBox13.TabStop = false;
+            this.football_4_10.BackColor = System.Drawing.Color.Transparent;
+            this.football_4_10.BackgroundImage = global::Tamagochi.Properties.Resources.football_action_fotor_bg_remover_20240323205422;
+            this.football_4_10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.football_4_10.Location = new System.Drawing.Point(14, 8);
+            this.football_4_10.Name = "football_4_10";
+            this.football_4_10.Size = new System.Drawing.Size(110, 97);
+            this.football_4_10.TabIndex = 0;
+            this.football_4_10.TabStop = false;
+            this.football_4_10.MouseDown += new System.Windows.Forms.MouseEventHandler(this.item_MouseDown);
             // 
-            // pictureBox14
+            // tbc_menu
             // 
-            this.pictureBox14.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox14.BackgroundImage = global::Tamagochi.Properties.Resources.pill2_action1;
-            this.pictureBox14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox14.Location = new System.Drawing.Point(149, 26);
-            this.pictureBox14.Name = "pictureBox14";
-            this.pictureBox14.Size = new System.Drawing.Size(110, 97);
-            this.pictureBox14.TabIndex = 1;
-            this.pictureBox14.TabStop = false;
+            this.tbc_menu.Controls.Add(this.tabPage1);
+            this.tbc_menu.Controls.Add(this.tabPage2);
+            this.tbc_menu.Controls.Add(this.tabPage3);
+            this.tbc_menu.Controls.Add(this.tabPage4);
+            this.tbc_menu.Location = new System.Drawing.Point(257, 617);
+            this.tbc_menu.Name = "tbc_menu";
+            this.tbc_menu.SelectedIndex = 0;
+            this.tbc_menu.Size = new System.Drawing.Size(716, 144);
+            this.tbc_menu.TabIndex = 20;
             // 
-            // pictureBox15
+            // tabPage1
             // 
-            this.pictureBox15.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox15.BackgroundImage = global::Tamagochi.Properties.Resources.band_action_fotor_bg_remover_20240323205432;
-            this.pictureBox15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox15.Location = new System.Drawing.Point(33, 26);
-            this.pictureBox15.Name = "pictureBox15";
-            this.pictureBox15.Size = new System.Drawing.Size(110, 97);
-            this.pictureBox15.TabIndex = 0;
-            this.pictureBox15.TabStop = false;
+            this.tabPage1.Controls.Add(this.towel_1_5);
+            this.tabPage1.Controls.Add(this.sponge_1_15);
+            this.tabPage1.Controls.Add(this.water_1_15);
+            this.tabPage1.Controls.Add(this.soap_1_10);
+            this.tabPage1.Location = new System.Drawing.Point(4, 29);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(708, 111);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "Ванная";
+            this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // gb_4
+            // tabPage2
             // 
-            this.gb_4.BackColor = System.Drawing.SystemColors.Control;
-            this.gb_4.Controls.Add(this.pictureBox17);
-            this.gb_4.Controls.Add(this.pictureBox18);
-            this.gb_4.Controls.Add(this.pictureBox19);
-            this.gb_4.Controls.Add(this.pictureBox20);
-            this.gb_4.Location = new System.Drawing.Point(236, 617);
-            this.gb_4.Name = "gb_4";
-            this.gb_4.Size = new System.Drawing.Size(751, 147);
-            this.gb_4.TabIndex = 19;
-            this.gb_4.TabStop = false;
+            this.tabPage2.Controls.Add(this.chicken_2_30);
+            this.tabPage2.Controls.Add(this.apple_2_10);
+            this.tabPage2.Controls.Add(this.hotdog_2_20);
+            this.tabPage2.Controls.Add(this.salat_2_15);
+            this.tabPage2.Controls.Add(this.cake_2_10);
+            this.tabPage2.Location = new System.Drawing.Point(4, 29);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(708, 111);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Кухня";
+            this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // pictureBox17
+            // tabPage3
             // 
-            this.pictureBox17.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox17.BackgroundImage = global::Tamagochi.Properties.Resources.game_action_fotor_bg_remover_20240323205343;
-            this.pictureBox17.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox17.Location = new System.Drawing.Point(381, 26);
-            this.pictureBox17.Name = "pictureBox17";
-            this.pictureBox17.Size = new System.Drawing.Size(140, 97);
-            this.pictureBox17.TabIndex = 3;
-            this.pictureBox17.TabStop = false;
+            this.tabPage3.Controls.Add(this.syringe_3_25);
+            this.tabPage3.Controls.Add(this.band_3_5);
+            this.tabPage3.Controls.Add(this.pipetca_3_15);
+            this.tabPage3.Controls.Add(this.redpill_3_10);
+            this.tabPage3.Controls.Add(this.bluepill_3_10);
+            this.tabPage3.Location = new System.Drawing.Point(4, 29);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(708, 111);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Лечение";
+            this.tabPage3.UseVisualStyleBackColor = true;
             // 
-            // pictureBox18
+            // tabPage4
             // 
-            this.pictureBox18.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox18.BackgroundImage = global::Tamagochi.Properties.Resources.paint_action_fotor_bg_remover_20240323205337;
-            this.pictureBox18.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox18.Location = new System.Drawing.Point(265, 25);
-            this.pictureBox18.Name = "pictureBox18";
-            this.pictureBox18.Size = new System.Drawing.Size(110, 98);
-            this.pictureBox18.TabIndex = 2;
-            this.pictureBox18.TabStop = false;
+            this.tabPage4.Controls.Add(this.games_4_20);
+            this.tabPage4.Controls.Add(this.paint_4_5);
+            this.tabPage4.Controls.Add(this.football_4_10);
+            this.tabPage4.Controls.Add(this.basketball_4_10);
+            this.tabPage4.Location = new System.Drawing.Point(4, 29);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(708, 111);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "Игры";
+            this.tabPage4.UseVisualStyleBackColor = true;
             // 
-            // pictureBox19
+            // timer
             // 
-            this.pictureBox19.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox19.BackgroundImage = global::Tamagochi.Properties.Resources.basketball_action__fotor_bg_remover_20240323205352;
-            this.pictureBox19.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox19.Location = new System.Drawing.Point(149, 26);
-            this.pictureBox19.Name = "pictureBox19";
-            this.pictureBox19.Size = new System.Drawing.Size(110, 97);
-            this.pictureBox19.TabIndex = 1;
-            this.pictureBox19.TabStop = false;
+            this.timer.Interval = 10;
+            this.timer.Tick += new System.EventHandler(this.timer_Tick);
             // 
-            // pictureBox20
+            // progressBar1
             // 
-            this.pictureBox20.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox20.BackgroundImage = global::Tamagochi.Properties.Resources.football_action_fotor_bg_remover_20240323205422;
-            this.pictureBox20.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox20.Location = new System.Drawing.Point(33, 26);
-            this.pictureBox20.Name = "pictureBox20";
-            this.pictureBox20.Size = new System.Drawing.Size(110, 97);
-            this.pictureBox20.TabIndex = 0;
-            this.pictureBox20.TabStop = false;
+            this.progressBar1.ForeColor = System.Drawing.Color.Green;
+            this.progressBar1.Location = new System.Drawing.Point(933, 165);
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Size = new System.Drawing.Size(229, 25);
+            this.progressBar1.TabIndex = 22;
+            // 
+            // pbox_happiness
+            // 
+            this.pbox_happiness.BackColor = System.Drawing.Color.Transparent;
+            this.pbox_happiness.BackgroundImage = global::Tamagochi.Properties.Resources._2900642_25513_fotor_bg_remover_20240325212352;
+            this.pbox_happiness.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pbox_happiness.Location = new System.Drawing.Point(844, 154);
+            this.pbox_happiness.Name = "pbox_happiness";
+            this.pbox_happiness.Size = new System.Drawing.Size(57, 50);
+            this.pbox_happiness.TabIndex = 21;
+            this.pbox_happiness.TabStop = false;
+            // 
+            // progressBar2
+            // 
+            this.progressBar2.ForeColor = System.Drawing.Color.Green;
+            this.progressBar2.Location = new System.Drawing.Point(933, 221);
+            this.progressBar2.Name = "progressBar2";
+            this.progressBar2.Size = new System.Drawing.Size(229, 25);
+            this.progressBar2.TabIndex = 24;
+            // 
+            // pbox_cleanliness
+            // 
+            this.pbox_cleanliness.BackColor = System.Drawing.Color.Transparent;
+            this.pbox_cleanliness.BackgroundImage = global::Tamagochi.Properties.Resources.soap_and_bubbles_icon;
+            this.pbox_cleanliness.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pbox_cleanliness.Location = new System.Drawing.Point(844, 210);
+            this.pbox_cleanliness.Name = "pbox_cleanliness";
+            this.pbox_cleanliness.Size = new System.Drawing.Size(57, 50);
+            this.pbox_cleanliness.TabIndex = 23;
+            this.pbox_cleanliness.TabStop = false;
             // 
             // Form1
             // 
@@ -523,12 +609,15 @@ namespace Tamagochi
             this.BackgroundImage = global::Tamagochi.Properties.Resources.bath_fon;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1246, 789);
-            this.Controls.Add(this.gb_4);
+            this.Controls.Add(this.progressBar2);
+            this.Controls.Add(this.pbox_cleanliness);
+            this.Controls.Add(this.progressBar1);
+            this.Controls.Add(this.pbox_happiness);
+            this.Controls.Add(this.tbc_menu);
             this.Controls.Add(this.btn_play);
             this.Controls.Add(this.btn_heal);
             this.Controls.Add(this.btn_kitchen);
             this.Controls.Add(this.btn_bath);
-            this.Controls.Add(this.gb_1);
             this.Controls.Add(this.btn_settings);
             this.Controls.Add(this.btn_pets);
             this.Controls.Add(this.label1);
@@ -537,36 +626,40 @@ namespace Tamagochi
             this.Controls.Add(this.pb_health);
             this.Controls.Add(this.pbox_hunger);
             this.Controls.Add(this.pbox_health);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pb_pet);
             this.Controls.Add(this.btn_next);
             this.Controls.Add(this.btn_prev);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.pbox_hunger)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbox_health)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.gb_1.ResumeLayout(false);
-            this.gb_2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            this.gb_3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
-            this.gb_4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_pet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chicken_2_30)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.syringe_3_25)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pipetca_3_15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bluepill_3_10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.redpill_3_10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.band_3_5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hotdog_2_20)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cake_2_10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.salat_2_15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.apple_2_10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.towel_1_5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.water_1_15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sponge_1_15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.soap_1_10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.games_4_20)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.paint_4_5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.basketball_4_10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.football_4_10)).EndInit();
+            this.tbc_menu.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
+            this.tabPage2.ResumeLayout(false);
+            this.tabPage3.ResumeLayout(false);
+            this.tabPage4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pbox_happiness)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox_cleanliness)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -575,7 +668,7 @@ namespace Tamagochi
         #endregion
         private System.Windows.Forms.Button btn_prev;
         private System.Windows.Forms.Button btn_next;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pb_pet;
         private System.Windows.Forms.PictureBox pbox_health;
         private System.Windows.Forms.PictureBox pbox_hunger;
         private System.Windows.Forms.ProgressBar pb_health;
@@ -584,32 +677,38 @@ namespace Tamagochi
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btn_pets;
         private System.Windows.Forms.Button btn_settings;
-        private GroupBox gb_1;
-        private PictureBox pictureBox6;
-        private PictureBox pictureBox5;
-        private PictureBox pictureBox4;
-        private PictureBox pictureBox3;
+        private PictureBox towel_1_5;
+        private PictureBox water_1_15;
+        private PictureBox sponge_1_15;
+        private PictureBox soap_1_10;
         private Button btn_bath;
         private Button btn_kitchen;
         private Button btn_play;
         private Button btn_heal;
-        private GroupBox gb_2;
-        private PictureBox pictureBox2;
-        private PictureBox pictureBox7;
-        private PictureBox pictureBox8;
-        private PictureBox pictureBox9;
-        private PictureBox pictureBox10;
-        private GroupBox gb_3;
-        private PictureBox pictureBox11;
-        private PictureBox pictureBox12;
-        private PictureBox pictureBox13;
-        private PictureBox pictureBox14;
-        private PictureBox pictureBox15;
-        private GroupBox gb_4;
-        private PictureBox pictureBox17;
-        private PictureBox pictureBox18;
-        private PictureBox pictureBox19;
-        private PictureBox pictureBox20;
+        private PictureBox hotdog_2_20;
+        private PictureBox cake_2_10;
+        private PictureBox salat_2_15;
+        private PictureBox apple_2_10;
+        private PictureBox chicken_2_30;
+        private PictureBox syringe_3_25;
+        private PictureBox pipetca_3_15;
+        private PictureBox bluepill_3_10;
+        private PictureBox redpill_3_10;
+        private PictureBox band_3_5;
+        private PictureBox games_4_20;
+        private PictureBox paint_4_5;
+        private PictureBox basketball_4_10;
+        private PictureBox football_4_10;
+        private TabControl tbc_menu;
+        private TabPage tabPage1;
+        private TabPage tabPage2;
+        private TabPage tabPage3;
+        private TabPage tabPage4;
+        private Timer timer;
+        private ProgressBar progressBar1;
+        private PictureBox pbox_happiness;
+        private ProgressBar progressBar2;
+        private PictureBox pbox_cleanliness;
     }
 }
 

@@ -28,79 +28,70 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.dog = new System.Windows.Forms.Button();
+            this.lion = new System.Windows.Forms.Button();
+            this.tiger = new System.Windows.Forms.Button();
+            this.cow = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // dog
             // 
-            this.button1.Location = new System.Drawing.Point(56, 51);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(176, 135);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.dog.BackColor = System.Drawing.Color.PapayaWhip;
+            this.dog.BackgroundImage = global::Tamagochi.Properties.Resources.dog;
+            this.dog.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.dog.Location = new System.Drawing.Point(96, 82);
+            this.dog.Name = "dog";
+            this.dog.Size = new System.Drawing.Size(170, 152);
+            this.dog.TabIndex = 0;
+            this.dog.UseVisualStyleBackColor = false;
+            this.dog.Click += new System.EventHandler(this.button_Click);
             // 
-            // button2
+            // lion
             // 
-            this.button2.Location = new System.Drawing.Point(288, 51);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(176, 135);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.lion.BackColor = System.Drawing.Color.PapayaWhip;
+            this.lion.BackgroundImage = global::Tamagochi.Properties.Resources.lion;
+            this.lion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.lion.Location = new System.Drawing.Point(363, 82);
+            this.lion.Name = "lion";
+            this.lion.Size = new System.Drawing.Size(170, 152);
+            this.lion.TabIndex = 1;
+            this.lion.UseVisualStyleBackColor = false;
+            this.lion.Click += new System.EventHandler(this.button_Click);
             // 
-            // button3
+            // tiger
             // 
-            this.button3.Location = new System.Drawing.Point(514, 51);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(176, 135);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.tiger.BackColor = System.Drawing.Color.PapayaWhip;
+            this.tiger.BackgroundImage = global::Tamagochi.Properties.Resources.tiger;
+            this.tiger.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.tiger.Location = new System.Drawing.Point(363, 287);
+            this.tiger.Name = "tiger";
+            this.tiger.Size = new System.Drawing.Size(170, 152);
+            this.tiger.TabIndex = 3;
+            this.tiger.UseVisualStyleBackColor = false;
+            this.tiger.Click += new System.EventHandler(this.button_Click);
             // 
-            // button4
+            // cow
             // 
-            this.button4.Location = new System.Drawing.Point(56, 225);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(176, 135);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(288, 225);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(176, 135);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "button5";
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // button6
-            // 
-            this.button6.Location = new System.Drawing.Point(514, 225);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(176, 135);
-            this.button6.TabIndex = 5;
-            this.button6.Text = "button6";
-            this.button6.UseVisualStyleBackColor = true;
+            this.cow.BackColor = System.Drawing.Color.PapayaWhip;
+            this.cow.BackgroundImage = global::Tamagochi.Properties.Resources.cow;
+            this.cow.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.cow.Location = new System.Drawing.Point(96, 287);
+            this.cow.Name = "cow";
+            this.cow.Size = new System.Drawing.Size(170, 152);
+            this.cow.TabIndex = 2;
+            this.cow.UseVisualStyleBackColor = false;
+            this.cow.Click += new System.EventHandler(this.button_Click);
             // 
             // Pets
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(770, 429);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.BackgroundImage = global::Tamagochi.Properties.Resources.pattern;
+            this.ClientSize = new System.Drawing.Size(645, 524);
+            this.Controls.Add(this.tiger);
+            this.Controls.Add(this.cow);
+            this.Controls.Add(this.lion);
+            this.Controls.Add(this.dog);
             this.Name = "Pets";
             this.Text = "Pets";
             this.ResumeLayout(false);
@@ -109,11 +100,9 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button dog;
+        private System.Windows.Forms.Button lion;
+        private System.Windows.Forms.Button tiger;
+        private System.Windows.Forms.Button cow;
     }
 }

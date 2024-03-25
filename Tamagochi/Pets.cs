@@ -16,5 +16,11 @@ namespace Tamagochi
         {
             InitializeComponent();
         }
+
+        private void button_Click(object sender, EventArgs e)
+        {
+            System.Windows.Forms.Button btn = (System.Windows.Forms.Button)sender;
+
+        }
     }
 }

@@ -63,6 +63,16 @@ namespace Tamagochi.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _2900642_25513_fotor_bg_remover_20240325212352 {
+            get {
+                object obj = ResourceManager.GetObject("2900642_25513-fotor-bg-remover-20240325212352", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _6f8bdaab_no_bg_preview__carve_photos_ {
             get {
                 object obj = ResourceManager.GetObject("6f8bdaab-no-bg-preview (carve.photos)", resourceCulture);
@@ -213,6 +223,26 @@ namespace Tamagochi.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap cow {
+            get {
+                object obj = ResourceManager.GetObject("cow", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap dog {
+            get {
+                object obj = ResourceManager.GetObject("dog", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap e1990341_no_bg_preview_carve_photos {
             get {
                 object obj = ResourceManager.GetObject("e1990341-no-bg-preview_carve.photos", resourceCulture);
@@ -333,6 +363,16 @@ namespace Tamagochi.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap lion {
+            get {
+                object obj = ResourceManager.GetObject("lion", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap mea {
             get {
                 object obj = ResourceManager.GetObject("mea", resourceCulture);
@@ -386,6 +426,16 @@ namespace Tamagochi.Properties {
         internal static System.Drawing.Bitmap paint_action_fotor_bg_remover_20240323205337 {
             get {
                 object obj = ResourceManager.GetObject("paint_action-fotor-bg-remover-20240323205337", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pattern {
+            get {
+                object obj = ResourceManager.GetObject("pattern", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -523,6 +573,16 @@ namespace Tamagochi.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap soap_and_bubbles_icon {
+            get {
+                object obj = ResourceManager.GetObject("soap-and-bubbles-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap syringe_action {
             get {
                 object obj = ResourceManager.GetObject("syringe_action", resourceCulture);
@@ -553,9 +613,9 @@ namespace Tamagochi.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap tiger2_fotor_bg_remover_20240324193029 {
+        internal static System.Drawing.Bitmap tiger {
             get {
-                object obj = ResourceManager.GetObject("tiger2-fotor-bg-remover-20240324193029", resourceCulture);
+                object obj = ResourceManager.GetObject("tiger", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

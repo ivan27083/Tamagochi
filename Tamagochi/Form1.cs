@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,29 +9,27 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Tamagochi.Classes;
 
 namespace Tamagochi
 {
     public partial class Form1 : Form
     {
-        static string[] rooms = { "Bath", "Kitchen", "Heal", "Play" };
+        Pet pet;
         int current_room;
-        GroupBox[] groupBoxes = new GroupBox[4];
+
         public Form1()
         {
             InitializeComponent();
+            out_file();
+            ((Control)pb_pet).AllowDrop = true;
+            if (pet.get_name() == "dog") pb_pet.BackgroundImage = new Bitmap(Properties.Resources.dog);
+            else if (pet.get_name() == "lion") pb_pet.BackgroundImage = new Bitmap(Properties.Resources.lion);
+            else if (pet.get_name() == "cow") pb_pet.BackgroundImage = new Bitmap(Properties.Resources.cow);
+            else if (pet.get_name() == "tiger") pb_pet.BackgroundImage = new Bitmap(Properties.Resources.tiger);
+            timer.Start();
             current_room = 0;
-            groupBoxes[0] = gb_1;
-            groupBoxes[1] = gb_2;
-            groupBoxes[2] = gb_3;
-            groupBoxes[3] = gb_4;
-            for (int i = 0; i < groupBoxes.Length; i++)
-            {
-                groupBoxes[i].Visible = false;
-            }
-            groupBoxes[current_room].Visible = true;
         }
-        
         private void btn_settings_Click(object sender, EventArgs e)
         {
             Settings settings = new Settings();
@@ -72,8 +71,7 @@ namespace Tamagochi
                 default: 
                     break;
             }
-            for (int i = 0; i < groupBoxes.Length; i++) { groupBoxes[i].Visible = false; }
-            groupBoxes[current_room].Visible = true;
+            tbc_menu.SelectedIndex = current_room;
         }
 
         private void btn_bath_Click(object sender, EventArgs e)
@@ -98,6 +96,68 @@ namespace Tamagochi
         {
             current_room = 3;
             check_room();
+        }
+        private void item_MouseDown(object sender, MouseEventArgs e)
+        {
+            System.Windows.Forms.PictureBox pic = (System.Windows.Forms.PictureBox)sender;
+            pic.DoDragDrop(pic.Name, DragDropEffects.Copy | DragDropEffects.Move);
+        }
+        private void pet_DragEnter(object sender, DragEventArgs e)
+        {
+            if(e.Data.GetDataPresent(DataFormats.Text)) e.Effect = DragDropEffects.Copy;
+            else e.Effect = DragDropEffects.None;
+            
+        }
+        private void pet_DragDrop(object sender, DragEventArgs e)
+        {
+            System.Windows.Forms.PictureBox pic = (System.Windows.Forms.PictureBox)sender;
+            pet.get_item(e.Data.GetData(DataFormats.Text).ToString());
+        }
+
+        private void timer_Tick(object sender, EventArgs e)
+        {
+            pb_health.Value = pet.get_hp();
+        }
+        public void in_file()
+        {
+            string file_path = "in.txt";
+            string name = pet.get_name();
+
+            if (!File.Exists(file_path))
+                File.Create(file_path).Close();
+
+            StreamWriter sw = new StreamWriter(file_path, true, Encoding.ASCII);
+            sw.WriteLine($"{name},{DateTime.Now.ToString()}");
+            pet.in_file();
+        }
+
+        public void out_file()
+        {
+            string file_path = "out.txt";
+            if (File.Exists(file_path))
+            {
+                StreamReader reader = new StreamReader(file_path);
+                string line;
+                while ((line = reader.ReadLine()) != null)
+                {
+                    string[] values = line.Split(',');
+                    if (values.Length == 2)
+                    {
+                        string name = values[0];
+                        pet = new Pet(name);
+                        DateTime time = DateTime.Parse(values[1]);
+                    }
+                }
+            }
+            else
+            {
+                pet = new Pet();
+            }
+            
+        }
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            in_file();
         }
     }
 }
