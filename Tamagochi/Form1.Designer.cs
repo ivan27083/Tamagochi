@@ -395,7 +395,7 @@ namespace Tamagochi
             // 
             // btn_bath
             // 
-            this.btn_bath.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btn_bath.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.btn_bath.BackgroundImage = global::Tamagochi.Properties.Resources.shower_icon_fotor_bg_remover_20240323205053;
             this.btn_bath.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_bath.Location = new System.Drawing.Point(153, 617);
@@ -407,7 +407,7 @@ namespace Tamagochi
             // 
             // btn_kitchen
             // 
-            this.btn_kitchen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btn_kitchen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.btn_kitchen.BackgroundImage = global::Tamagochi.Properties.Resources.chicken_1227251;
             this.btn_kitchen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_kitchen.Location = new System.Drawing.Point(153, 692);
@@ -419,7 +419,7 @@ namespace Tamagochi
             // 
             // btn_play
             // 
-            this.btn_play.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btn_play.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.btn_play.BackgroundImage = global::Tamagochi.Properties.Resources.abfe78c9c67376a6c2a9732b9afe0e4a;
             this.btn_play.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_play.Location = new System.Drawing.Point(993, 692);
@@ -431,7 +431,7 @@ namespace Tamagochi
             // 
             // btn_heal
             // 
-            this.btn_heal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btn_heal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.btn_heal.BackgroundImage = global::Tamagochi.Properties.Resources.health_icon;
             this.btn_heal.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_heal.Location = new System.Drawing.Point(993, 617);

@@ -8,7 +8,7 @@ using System.Windows.Forms;
 
 namespace Tamagochi.Classes
 {
-    internal class Pet
+    public class Pet
     {
         string name;//dog tiger lion 
         int id;

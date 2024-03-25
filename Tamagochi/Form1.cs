@@ -15,9 +15,9 @@ namespace Tamagochi
 {
     public partial class Form1 : Form
     {
-        Pet pet;
+        static Pet pet;
         int current_room;
-
+        public string check_name;
         public Form1()
         {
             InitializeComponent();
@@ -30,6 +30,10 @@ namespace Tamagochi
             timer.Start();
             current_room = 0;
         }
+        public static void set_pet(string str)
+        {
+            pet = new Pet(str);
+        }
         private void btn_settings_Click(object sender, EventArgs e)
         {
             Settings settings = new Settings();
@@ -40,6 +44,10 @@ namespace Tamagochi
         {
             Pets pets = new Pets();
             pets.ShowDialog();
+            if (pet.get_name() == "dog") pb_pet.BackgroundImage = new Bitmap(Properties.Resources.dog);
+            else if (pet.get_name() == "lion") pb_pet.BackgroundImage = new Bitmap(Properties.Resources.lion);
+            else if (pet.get_name() == "cow") pb_pet.BackgroundImage = new Bitmap(Properties.Resources.cow);
+            else if (pet.get_name() == "tiger") pb_pet.BackgroundImage = new Bitmap(Properties.Resources.tiger);
         }
         private void btn_prev_Click(object sender, EventArgs e)
         {
