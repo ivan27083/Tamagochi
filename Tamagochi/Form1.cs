@@ -125,15 +125,13 @@ namespace Tamagochi
 
             if (!File.Exists(file_path))
                 File.Create(file_path).Close();
-
-            StreamWriter sw = new StreamWriter(file_path, true, Encoding.ASCII);
-            sw.WriteLine($"{name},{DateTime.Now.ToString()}");
+            File.WriteAllText(file_path, $"{name},{DateTime.Now.ToString()}");
             pet.in_file();
         }
 
         public void out_file()
         {
-            string file_path = "out.txt";
+            string file_path = "in.txt";
             if (File.Exists(file_path))
             {
                 StreamReader reader = new StreamReader(file_path);
@@ -148,6 +146,7 @@ namespace Tamagochi
                         DateTime time = DateTime.Parse(values[1]);
                     }
                 }
+                reader.Close();
             }
             else
             {

@@ -56,9 +56,11 @@ namespace Tamagochi.Classes
             string file_path = name + ".txt";
             if (!File.Exists(file_path))
                 File.Create(file_path).Close();
-
-            StreamWriter sw = new StreamWriter(file_path, true, Encoding.ASCII);
-            sw.WriteLine($"{id},{hp},{satiety},{experience},{clean},{happy}");
+            string s= $"{id},{hp},{satiety},{experience},{clean},{happy}";
+            File.WriteAllText(file_path, s);
+            //StreamWriter sw = new StreamWriter(file_path, true, Encoding.ASCII);
+            //sw.WriteLine($"{1},{2},{3},{4},{5},{6}",id, hp, satiety, experience, clean, happy);
+            //sw.WriteLine(s);
         }
 
         public void out_file()
@@ -81,6 +83,7 @@ namespace Tamagochi.Classes
                         happy = int.Parse(values[5]);
                     }
                 }
+                reader.Close();
             }
             else
             {

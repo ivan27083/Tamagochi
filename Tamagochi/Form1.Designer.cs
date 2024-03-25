@@ -150,7 +150,7 @@ namespace Tamagochi
             // 
             // pb_exp
             // 
-            this.pb_exp.Location = new System.Drawing.Point(534, 201);
+            this.pb_exp.Location = new System.Drawing.Point(521, 137);
             this.pb_exp.Name = "pb_exp";
             this.pb_exp.Size = new System.Drawing.Size(229, 29);
             this.pb_exp.TabIndex = 8;
@@ -161,7 +161,7 @@ namespace Tamagochi
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(450, 201);
+            this.label1.Location = new System.Drawing.Point(437, 137);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(79, 32);
             this.label1.TabIndex = 9;
@@ -218,9 +218,9 @@ namespace Tamagochi
             this.pb_pet.BackColor = System.Drawing.Color.Transparent;
             this.pb_pet.BackgroundImage = global::Tamagochi.Properties.Resources.dog;
             this.pb_pet.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pb_pet.Location = new System.Drawing.Point(438, 262);
+            this.pb_pet.Location = new System.Drawing.Point(410, 221);
             this.pb_pet.Name = "pb_pet";
-            this.pb_pet.Size = new System.Drawing.Size(341, 329);
+            this.pb_pet.Size = new System.Drawing.Size(393, 390);
             this.pb_pet.TabIndex = 3;
             this.pb_pet.TabStop = false;
             this.pb_pet.DragEnter += new System.Windows.Forms.DragEventHandler(this.pet_DragEnter);
@@ -230,7 +230,7 @@ namespace Tamagochi
             this.chicken_2_30.BackColor = System.Drawing.Color.Transparent;
             this.chicken_2_30.BackgroundImage = global::Tamagochi.Properties.Resources.chicken_action_fotor_bg_remover_20240323205151;
             this.chicken_2_30.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.chicken_2_30.Location = new System.Drawing.Point(470, 6);
+            this.chicken_2_30.Location = new System.Drawing.Point(572, 8);
             this.chicken_2_30.Name = "chicken_2_30";
             this.chicken_2_30.Size = new System.Drawing.Size(110, 97);
             this.chicken_2_30.TabIndex = 4;
@@ -242,7 +242,7 @@ namespace Tamagochi
             this.syringe_3_25.BackColor = System.Drawing.Color.Transparent;
             this.syringe_3_25.BackgroundImage = global::Tamagochi.Properties.Resources.syringe_action_fotor_bg_remover_20240323205516;
             this.syringe_3_25.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.syringe_3_25.Location = new System.Drawing.Point(470, 8);
+            this.syringe_3_25.Location = new System.Drawing.Point(570, 9);
             this.syringe_3_25.Name = "syringe_3_25";
             this.syringe_3_25.Size = new System.Drawing.Size(110, 97);
             this.syringe_3_25.TabIndex = 4;
@@ -254,7 +254,7 @@ namespace Tamagochi
             this.pipetca_3_15.BackColor = System.Drawing.Color.Transparent;
             this.pipetca_3_15.BackgroundImage = global::Tamagochi.Properties.Resources.pipetca_action_fotor_bg_remover_20240323205552;
             this.pipetca_3_15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pipetca_3_15.Location = new System.Drawing.Point(354, 8);
+            this.pipetca_3_15.Location = new System.Drawing.Point(432, 8);
             this.pipetca_3_15.Name = "pipetca_3_15";
             this.pipetca_3_15.Size = new System.Drawing.Size(110, 97);
             this.pipetca_3_15.TabIndex = 3;
@@ -266,7 +266,7 @@ namespace Tamagochi
             this.bluepill_3_10.BackColor = System.Drawing.Color.Transparent;
             this.bluepill_3_10.BackgroundImage = global::Tamagochi.Properties.Resources.pill_action_fotor_bg_remover_2024032320557;
             this.bluepill_3_10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bluepill_3_10.Location = new System.Drawing.Point(238, 7);
+            this.bluepill_3_10.Location = new System.Drawing.Point(298, 8);
             this.bluepill_3_10.Name = "bluepill_3_10";
             this.bluepill_3_10.Size = new System.Drawing.Size(110, 98);
             this.bluepill_3_10.TabIndex = 2;
@@ -278,7 +278,7 @@ namespace Tamagochi
             this.redpill_3_10.BackColor = System.Drawing.Color.Transparent;
             this.redpill_3_10.BackgroundImage = global::Tamagochi.Properties.Resources.pill2_action1;
             this.redpill_3_10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.redpill_3_10.Location = new System.Drawing.Point(122, 8);
+            this.redpill_3_10.Location = new System.Drawing.Point(159, 8);
             this.redpill_3_10.Name = "redpill_3_10";
             this.redpill_3_10.Size = new System.Drawing.Size(110, 97);
             this.redpill_3_10.TabIndex = 1;
@@ -290,7 +290,7 @@ namespace Tamagochi
             this.band_3_5.BackColor = System.Drawing.Color.Transparent;
             this.band_3_5.BackgroundImage = global::Tamagochi.Properties.Resources.band_action_fotor_bg_remover_20240323205432;
             this.band_3_5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.band_3_5.Location = new System.Drawing.Point(6, 8);
+            this.band_3_5.Location = new System.Drawing.Point(24, 8);
             this.band_3_5.Name = "band_3_5";
             this.band_3_5.Size = new System.Drawing.Size(110, 97);
             this.band_3_5.TabIndex = 0;
@@ -302,7 +302,7 @@ namespace Tamagochi
             this.hotdog_2_20.BackColor = System.Drawing.Color.Transparent;
             this.hotdog_2_20.BackgroundImage = global::Tamagochi.Properties.Resources.hotdog_action_fotor_bg_remover_2024032320515;
             this.hotdog_2_20.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.hotdog_2_20.Location = new System.Drawing.Point(354, 6);
+            this.hotdog_2_20.Location = new System.Drawing.Point(442, 8);
             this.hotdog_2_20.Name = "hotdog_2_20";
             this.hotdog_2_20.Size = new System.Drawing.Size(110, 97);
             this.hotdog_2_20.TabIndex = 3;
@@ -314,7 +314,7 @@ namespace Tamagochi
             this.cake_2_10.BackColor = System.Drawing.Color.Transparent;
             this.cake_2_10.BackgroundImage = global::Tamagochi.Properties.Resources.muffin_action_fotor_bg_remover_20240323205140;
             this.cake_2_10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.cake_2_10.Location = new System.Drawing.Point(238, 5);
+            this.cake_2_10.Location = new System.Drawing.Point(299, 6);
             this.cake_2_10.Name = "cake_2_10";
             this.cake_2_10.Size = new System.Drawing.Size(110, 98);
             this.cake_2_10.TabIndex = 2;
@@ -326,7 +326,7 @@ namespace Tamagochi
             this.salat_2_15.BackColor = System.Drawing.Color.Transparent;
             this.salat_2_15.BackgroundImage = global::Tamagochi.Properties.Resources.salat_action_fotor_bg_remover_20240323205128;
             this.salat_2_15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.salat_2_15.Location = new System.Drawing.Point(122, 6);
+            this.salat_2_15.Location = new System.Drawing.Point(159, 6);
             this.salat_2_15.Name = "salat_2_15";
             this.salat_2_15.Size = new System.Drawing.Size(110, 97);
             this.salat_2_15.TabIndex = 1;
@@ -338,7 +338,7 @@ namespace Tamagochi
             this.apple_2_10.BackColor = System.Drawing.Color.Transparent;
             this.apple_2_10.BackgroundImage = global::Tamagochi.Properties.Resources.apple_action_fotor_bg_remover_20240323205115;
             this.apple_2_10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.apple_2_10.Location = new System.Drawing.Point(6, 6);
+            this.apple_2_10.Location = new System.Drawing.Point(20, 6);
             this.apple_2_10.Name = "apple_2_10";
             this.apple_2_10.Size = new System.Drawing.Size(110, 97);
             this.apple_2_10.TabIndex = 0;
@@ -350,7 +350,7 @@ namespace Tamagochi
             this.towel_1_5.BackColor = System.Drawing.Color.Transparent;
             this.towel_1_5.BackgroundImage = global::Tamagochi.Properties.Resources._6f8bdaab_no_bg_preview__carve_photos_;
             this.towel_1_5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.towel_1_5.Location = new System.Drawing.Point(357, 7);
+            this.towel_1_5.Location = new System.Drawing.Point(561, 8);
             this.towel_1_5.Name = "towel_1_5";
             this.towel_1_5.Size = new System.Drawing.Size(110, 97);
             this.towel_1_5.TabIndex = 3;
@@ -362,7 +362,7 @@ namespace Tamagochi
             this.water_1_15.BackColor = System.Drawing.Color.Transparent;
             this.water_1_15.BackgroundImage = global::Tamagochi.Properties.Resources.water_action;
             this.water_1_15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.water_1_15.Location = new System.Drawing.Point(241, 11);
+            this.water_1_15.Location = new System.Drawing.Point(407, 8);
             this.water_1_15.Name = "water_1_15";
             this.water_1_15.Size = new System.Drawing.Size(96, 88);
             this.water_1_15.TabIndex = 2;
@@ -374,7 +374,7 @@ namespace Tamagochi
             this.sponge_1_15.BackColor = System.Drawing.Color.Transparent;
             this.sponge_1_15.BackgroundImage = global::Tamagochi.Properties.Resources.wash_action_fotor_bg_remover_20240323205041;
             this.sponge_1_15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.sponge_1_15.Location = new System.Drawing.Point(125, 16);
+            this.sponge_1_15.Location = new System.Drawing.Point(215, 16);
             this.sponge_1_15.Name = "sponge_1_15";
             this.sponge_1_15.Size = new System.Drawing.Size(110, 80);
             this.sponge_1_15.TabIndex = 1;
@@ -386,7 +386,7 @@ namespace Tamagochi
             this.soap_1_10.BackColor = System.Drawing.Color.Transparent;
             this.soap_1_10.BackgroundImage = global::Tamagochi.Properties.Resources.soap_action_transformed;
             this.soap_1_10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.soap_1_10.Location = new System.Drawing.Point(9, 7);
+            this.soap_1_10.Location = new System.Drawing.Point(39, 8);
             this.soap_1_10.Name = "soap_1_10";
             this.soap_1_10.Size = new System.Drawing.Size(110, 97);
             this.soap_1_10.TabIndex = 0;
@@ -446,7 +446,7 @@ namespace Tamagochi
             this.games_4_20.BackColor = System.Drawing.Color.Transparent;
             this.games_4_20.BackgroundImage = global::Tamagochi.Properties.Resources.game_action_fotor_bg_remover_20240323205343;
             this.games_4_20.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.games_4_20.Location = new System.Drawing.Point(362, 8);
+            this.games_4_20.Location = new System.Drawing.Point(504, 6);
             this.games_4_20.Name = "games_4_20";
             this.games_4_20.Size = new System.Drawing.Size(140, 97);
             this.games_4_20.TabIndex = 3;
@@ -458,7 +458,7 @@ namespace Tamagochi
             this.paint_4_5.BackColor = System.Drawing.Color.Transparent;
             this.paint_4_5.BackgroundImage = global::Tamagochi.Properties.Resources.paint_action_fotor_bg_remover_20240323205337;
             this.paint_4_5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.paint_4_5.Location = new System.Drawing.Point(246, 7);
+            this.paint_4_5.Location = new System.Drawing.Point(350, 5);
             this.paint_4_5.Name = "paint_4_5";
             this.paint_4_5.Size = new System.Drawing.Size(110, 98);
             this.paint_4_5.TabIndex = 2;
@@ -470,7 +470,7 @@ namespace Tamagochi
             this.basketball_4_10.BackColor = System.Drawing.Color.Transparent;
             this.basketball_4_10.BackgroundImage = global::Tamagochi.Properties.Resources.basketball_action__fotor_bg_remover_20240323205352;
             this.basketball_4_10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.basketball_4_10.Location = new System.Drawing.Point(130, 8);
+            this.basketball_4_10.Location = new System.Drawing.Point(208, 6);
             this.basketball_4_10.Name = "basketball_4_10";
             this.basketball_4_10.Size = new System.Drawing.Size(110, 97);
             this.basketball_4_10.TabIndex = 1;
@@ -482,7 +482,7 @@ namespace Tamagochi
             this.football_4_10.BackColor = System.Drawing.Color.Transparent;
             this.football_4_10.BackgroundImage = global::Tamagochi.Properties.Resources.football_action_fotor_bg_remover_20240323205422;
             this.football_4_10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.football_4_10.Location = new System.Drawing.Point(14, 8);
+            this.football_4_10.Location = new System.Drawing.Point(65, 6);
             this.football_4_10.Name = "football_4_10";
             this.football_4_10.Size = new System.Drawing.Size(110, 97);
             this.football_4_10.TabIndex = 0;
@@ -503,6 +503,7 @@ namespace Tamagochi
             // 
             // tabPage1
             // 
+            this.tabPage1.BackColor = System.Drawing.Color.Bisque;
             this.tabPage1.Controls.Add(this.towel_1_5);
             this.tabPage1.Controls.Add(this.sponge_1_15);
             this.tabPage1.Controls.Add(this.water_1_15);
@@ -513,10 +514,10 @@ namespace Tamagochi
             this.tabPage1.Size = new System.Drawing.Size(708, 111);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Ванная";
-            this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // tabPage2
             // 
+            this.tabPage2.BackColor = System.Drawing.Color.Lavender;
             this.tabPage2.Controls.Add(this.chicken_2_30);
             this.tabPage2.Controls.Add(this.apple_2_10);
             this.tabPage2.Controls.Add(this.hotdog_2_20);
@@ -528,10 +529,10 @@ namespace Tamagochi
             this.tabPage2.Size = new System.Drawing.Size(708, 111);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Кухня";
-            this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // tabPage3
             // 
+            this.tabPage3.BackColor = System.Drawing.Color.MistyRose;
             this.tabPage3.Controls.Add(this.syringe_3_25);
             this.tabPage3.Controls.Add(this.band_3_5);
             this.tabPage3.Controls.Add(this.pipetca_3_15);
@@ -543,10 +544,10 @@ namespace Tamagochi
             this.tabPage3.Size = new System.Drawing.Size(708, 111);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Лечение";
-            this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // tabPage4
             // 
+            this.tabPage4.BackColor = System.Drawing.Color.Khaki;
             this.tabPage4.Controls.Add(this.games_4_20);
             this.tabPage4.Controls.Add(this.paint_4_5);
             this.tabPage4.Controls.Add(this.football_4_10);
@@ -557,7 +558,6 @@ namespace Tamagochi
             this.tabPage4.Size = new System.Drawing.Size(708, 111);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Игры";
-            this.tabPage4.UseVisualStyleBackColor = true;
             // 
             // timer
             // 

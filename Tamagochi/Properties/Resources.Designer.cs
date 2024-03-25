@@ -133,6 +133,16 @@ namespace Tamagochi.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap arrow21 {
+            get {
+                object obj = ResourceManager.GetObject("arrow21", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap band_action {
             get {
                 object obj = ResourceManager.GetObject("band_action", resourceCulture);
@@ -256,6 +266,16 @@ namespace Tamagochi.Properties {
         internal static System.Drawing.Bitmap eat_fon {
             get {
                 object obj = ResourceManager.GetObject("eat_fon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap flat_arrow_collection_fotor {
+            get {
+                object obj = ResourceManager.GetObject("flat-arrow-collection-fotor", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
