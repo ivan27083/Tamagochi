@@ -73,9 +73,9 @@ namespace Tamagochi
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.timer = new System.Windows.Forms.Timer(this.components);
-            this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.pb_happiness = new System.Windows.Forms.ProgressBar();
             this.pbox_happiness = new System.Windows.Forms.PictureBox();
-            this.progressBar2 = new System.Windows.Forms.ProgressBar();
+            this.pb_cleanliness = new System.Windows.Forms.ProgressBar();
             this.pbox_cleanliness = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbox_hunger)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbox_health)).BeginInit();
@@ -134,6 +134,7 @@ namespace Tamagochi
             // 
             // pb_health
             // 
+            this.pb_health.BackColor = System.Drawing.SystemColors.Control;
             this.pb_health.ForeColor = System.Drawing.Color.Green;
             this.pb_health.Location = new System.Drawing.Point(933, 53);
             this.pb_health.Name = "pb_health";
@@ -223,6 +224,7 @@ namespace Tamagochi
             this.pb_pet.Size = new System.Drawing.Size(393, 390);
             this.pb_pet.TabIndex = 3;
             this.pb_pet.TabStop = false;
+            this.pb_pet.DragDrop += new System.Windows.Forms.DragEventHandler(this.pet_DragDrop);
             this.pb_pet.DragEnter += new System.Windows.Forms.DragEventHandler(this.pet_DragEnter);
             // 
             // chicken_2_30
@@ -564,13 +566,13 @@ namespace Tamagochi
             this.timer.Interval = 10;
             this.timer.Tick += new System.EventHandler(this.timer_Tick);
             // 
-            // progressBar1
+            // pb_happiness
             // 
-            this.progressBar1.ForeColor = System.Drawing.Color.Green;
-            this.progressBar1.Location = new System.Drawing.Point(933, 165);
-            this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(229, 25);
-            this.progressBar1.TabIndex = 22;
+            this.pb_happiness.ForeColor = System.Drawing.Color.Gold;
+            this.pb_happiness.Location = new System.Drawing.Point(933, 165);
+            this.pb_happiness.Name = "pb_happiness";
+            this.pb_happiness.Size = new System.Drawing.Size(229, 25);
+            this.pb_happiness.TabIndex = 22;
             // 
             // pbox_happiness
             // 
@@ -583,13 +585,13 @@ namespace Tamagochi
             this.pbox_happiness.TabIndex = 21;
             this.pbox_happiness.TabStop = false;
             // 
-            // progressBar2
+            // pb_cleanliness
             // 
-            this.progressBar2.ForeColor = System.Drawing.Color.Green;
-            this.progressBar2.Location = new System.Drawing.Point(933, 221);
-            this.progressBar2.Name = "progressBar2";
-            this.progressBar2.Size = new System.Drawing.Size(229, 25);
-            this.progressBar2.TabIndex = 24;
+            this.pb_cleanliness.ForeColor = System.Drawing.Color.Plum;
+            this.pb_cleanliness.Location = new System.Drawing.Point(933, 221);
+            this.pb_cleanliness.Name = "pb_cleanliness";
+            this.pb_cleanliness.Size = new System.Drawing.Size(229, 25);
+            this.pb_cleanliness.TabIndex = 24;
             // 
             // pbox_cleanliness
             // 
@@ -609,9 +611,9 @@ namespace Tamagochi
             this.BackgroundImage = global::Tamagochi.Properties.Resources.bath_fon;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1246, 789);
-            this.Controls.Add(this.progressBar2);
+            this.Controls.Add(this.pb_cleanliness);
             this.Controls.Add(this.pbox_cleanliness);
-            this.Controls.Add(this.progressBar1);
+            this.Controls.Add(this.pb_happiness);
             this.Controls.Add(this.pbox_happiness);
             this.Controls.Add(this.tbc_menu);
             this.Controls.Add(this.btn_play);
@@ -705,9 +707,9 @@ namespace Tamagochi
         private TabPage tabPage3;
         private TabPage tabPage4;
         private Timer timer;
-        private ProgressBar progressBar1;
+        private ProgressBar pb_happiness;
         private PictureBox pbox_happiness;
-        private ProgressBar progressBar2;
+        private ProgressBar pb_cleanliness;
         private PictureBox pbox_cleanliness;
     }
 }

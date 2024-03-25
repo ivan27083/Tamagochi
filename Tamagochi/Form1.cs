@@ -23,16 +23,20 @@ namespace Tamagochi
             InitializeComponent();
             out_file();
             ((Control)pb_pet).AllowDrop = true;
-            if (pet.get_name() == "dog") pb_pet.BackgroundImage = new Bitmap(Properties.Resources.dog);
-            else if (pet.get_name() == "lion") pb_pet.BackgroundImage = new Bitmap(Properties.Resources.lion);
-            else if (pet.get_name() == "cow") pb_pet.BackgroundImage = new Bitmap(Properties.Resources.cow);
-            else if (pet.get_name() == "tiger") pb_pet.BackgroundImage = new Bitmap(Properties.Resources.tiger);
+            update_pet_image();
             timer.Start();
             current_room = 0;
         }
         public static void set_pet(string str)
         {
             pet = new Pet(str);
+        }
+        private void update_pet_image()
+        {
+            if (pet.get_name() == "dog") pb_pet.BackgroundImage = new Bitmap(Properties.Resources.dog);
+            else if (pet.get_name() == "lion") pb_pet.BackgroundImage = new Bitmap(Properties.Resources.lion);
+            else if (pet.get_name() == "cow") pb_pet.BackgroundImage = new Bitmap(Properties.Resources.cow);
+            else if (pet.get_name() == "tiger") pb_pet.BackgroundImage = new Bitmap(Properties.Resources.tiger);
         }
         private void btn_settings_Click(object sender, EventArgs e)
         {
@@ -44,10 +48,7 @@ namespace Tamagochi
         {
             Pets pets = new Pets();
             pets.ShowDialog();
-            if (pet.get_name() == "dog") pb_pet.BackgroundImage = new Bitmap(Properties.Resources.dog);
-            else if (pet.get_name() == "lion") pb_pet.BackgroundImage = new Bitmap(Properties.Resources.lion);
-            else if (pet.get_name() == "cow") pb_pet.BackgroundImage = new Bitmap(Properties.Resources.cow);
-            else if (pet.get_name() == "tiger") pb_pet.BackgroundImage = new Bitmap(Properties.Resources.tiger);
+            update_pet_image();
         }
         private void btn_prev_Click(object sender, EventArgs e)
         {
@@ -125,6 +126,9 @@ namespace Tamagochi
         private void timer_Tick(object sender, EventArgs e)
         {
             pb_health.Value = pet.get_hp();
+            pb_hunger.Value = pet.get_satiety();
+            pb_happiness.Value = pet.get_happy();
+            pb_cleanliness.Value = pet.get_clean();
         }
         public void in_file()
         {
