@@ -23,6 +23,7 @@ namespace Tamagochi
         public static WindowsMediaPlayer wmp;
         public static SoundPlayer player = new SoundPlayer();
         public static bool check_state;
+        public static bool is_alive;
         public Tamagochi()
         {
             InitializeComponent();
@@ -170,8 +171,11 @@ namespace Tamagochi
 
         private void timer_Tick(object sender, EventArgs e)
         {
-            pet.update();
-            update_progress();
+            if (is_alive)
+            {
+                pet.update();
+                update_progress();
+            }
         }
         public void in_file()
         {
@@ -199,6 +203,7 @@ namespace Tamagochi
                     {
                         string name = values[0];
                         pet = new Pet(name);
+                        is_alive = true;
                         time = DateTime.Parse(values[1]);
                         pet.update_time(time);
                     }

@@ -149,6 +149,7 @@ namespace Tamagochi.Classes
 
             if (hp == 0)
             {
+                Tamagochi.is_alive = false;
                 MessageBox.Show("Ваш питомец сбежал!","Упс...");
                 string file_path = name + ".txt";
                 File.Delete(file_path);

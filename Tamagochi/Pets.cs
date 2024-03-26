@@ -20,6 +20,7 @@ namespace Tamagochi
         {
             System.Windows.Forms.Button btn = (System.Windows.Forms.Button)sender;
             Tamagochi.set_pet(btn.Name);
+            Tamagochi.is_alive = true;
             this.Close();
         }
     }
