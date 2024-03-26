@@ -21,7 +21,7 @@ namespace Tamagochi
         int current_room;
         public string check_name;
         public static WindowsMediaPlayer wmp;
-        
+        SoundPlayer player = new SoundPlayer();
         public Tamagochi()
         {
             InitializeComponent();
@@ -41,7 +41,7 @@ namespace Tamagochi
         private void wmp_init()
         {
             wmp = new WindowsMediaPlayer();
-            wmp.URL = @"C:\Учеба\2 курс\2 семестр\Практика\Tamagochi\Tamagochi\Resources\music.wav";
+            wmp.URL = @"music.wav";
             wmp.controls.play();
             wmp.settings.setMode("loop", true);
         }
@@ -145,7 +145,25 @@ namespace Tamagochi
         private void pet_DragDrop(object sender, DragEventArgs e)
         {
             System.Windows.Forms.PictureBox pic = (System.Windows.Forms.PictureBox)sender;
-            pet.get_item(e.Data.GetData(DataFormats.Text).ToString());
+            
+            string s = "";
+            switch (current_room)
+            {
+                case 0:
+                    s = $"{Environment.CurrentDirectory}\\voda_dush.wav";
+                    break;
+                case 1:
+                    s = $"{Environment.CurrentDirectory}\\eating.wav";
+                    break;
+                case 2:
+                    s = $"{Environment.CurrentDirectory}\\healing.wav";
+                    break;
+                case 3:
+                    s = $"{Environment.CurrentDirectory}\\toy.wav";
+                    break;
+            }
+            player.SoundLocation = s;
+            if (pet.get_item(e.Data.GetData(DataFormats.Text).ToString()) == 0) player.Play();
             update_progress();
         }
 

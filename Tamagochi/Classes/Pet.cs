@@ -157,7 +157,7 @@ namespace Tamagochi.Classes
             }
         }
 
-        public void get_item(string name_picbox)
+        public int get_item(string name_picbox)
         {
             Items item = new Items(name_picbox);
             int var = item.get_id();
@@ -170,8 +170,9 @@ namespace Tamagochi.Classes
                         if (clean + act <= 100) clean += act;
                         else clean = 100;
                         increase_experience(5);
+                        return 0;
                     }
-                    break;
+                    else return 1;
                 case 2: //кухня няма няма
                     if (satiety != 100)
                     {
@@ -181,8 +182,9 @@ namespace Tamagochi.Classes
                         if (clean - act / 2 >= 0) clean -= act / 2;
                         else clean = 0;
                         increase_experience(10);
+                        return 0;
                     }
-                    break;
+                    else return 1;
                 case 3: //лечение 
                     if (hp != 100)
                     {
@@ -192,8 +194,9 @@ namespace Tamagochi.Classes
                         if (happy - 5 >= 0) happy -= 5;
                         else happy = 0;
                         increase_experience(5);
+                        return 0;
                     }
-                    break;
+                    else return 1;
                 case 4://игра
                     if (happy != 100)
                     {
@@ -208,8 +211,10 @@ namespace Tamagochi.Classes
                         if (clean - act / 2 >= 0) clean -= act / 2;
                         else clean = 0;
                         increase_experience(20);
+                        return 0;
                     }
-                    break;
+                    else return 1;
+                default: return 1;
             }
         }
 

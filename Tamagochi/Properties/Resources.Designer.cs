@@ -461,31 +461,12 @@ namespace Tamagochi.Properties {
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.IO.UnmanagedMemoryStream, аналогичного System.IO.MemoryStream.
-        /// </summary>
-        internal static System.IO.UnmanagedMemoryStream music {
-            get {
-                return ResourceManager.GetStream("music", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap music_fotor_bg_remover_20240326202026 {
             get {
                 object obj = ResourceManager.GetObject("music-fotor-bg-remover-20240326202026", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
-        /// </summary>
-        internal static byte[] music_mp3 {
-            get {
-                object obj = ResourceManager.GetObject("music_mp3", resourceCulture);
-                return ((byte[])(obj));
             }
         }
         
