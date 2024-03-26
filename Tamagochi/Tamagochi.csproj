@@ -287,5 +287,42 @@
   <ItemGroup>
     <None Include="Resources\hospital_fon.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\music.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fon_act.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\music-fotor-bg-remover-20240326202026.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sound-fotor-bg-remover-20240326202045.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2024-03-26_202631-fotor-bg-remover-20240326202646.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\music_mp3.mp3" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

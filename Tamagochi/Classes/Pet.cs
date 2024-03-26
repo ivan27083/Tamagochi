@@ -155,7 +155,6 @@ namespace Tamagochi.Classes
                 Pets pets = new Pets();
                 pets.ShowDialog();
             }
-
         }
 
         public void get_item(string name_picbox)
@@ -173,7 +172,7 @@ namespace Tamagochi.Classes
                         increase_experience(5);
                     }
                     break;
-                case 2: //кухня 
+                case 2: //кухня няма няма
                     if (satiety != 100)
                     {
                         if (satiety + act <= 100) satiety += act;

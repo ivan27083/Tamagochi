@@ -16,5 +16,9 @@ namespace Tamagochi
         {
             InitializeComponent();
         }
+        private void trackBar_music_Scroll(object sender, EventArgs e)
+        {
+            Tamagochi.wmp.settings.volume = trackBar_music.Value * 10;
+        }
     }
 }

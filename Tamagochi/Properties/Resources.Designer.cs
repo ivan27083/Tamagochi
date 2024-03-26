@@ -63,6 +63,16 @@ namespace Tamagochi.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _2024_03_26_202631_fotor_bg_remover_20240326202646 {
+            get {
+                object obj = ResourceManager.GetObject("2024-03-26_202631-fotor-bg-remover-20240326202646", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _2900642_25513_fotor_bg_remover_20240325212352 {
             get {
                 object obj = ResourceManager.GetObject("2900642_25513-fotor-bg-remover-20240325212352", resourceCulture);
@@ -293,6 +303,16 @@ namespace Tamagochi.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap fon_act {
+            get {
+                object obj = ResourceManager.GetObject("fon_act", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap football_action {
             get {
                 object obj = ResourceManager.GetObject("football_action", resourceCulture);
@@ -437,6 +457,35 @@ namespace Tamagochi.Properties {
             get {
                 object obj = ResourceManager.GetObject("muffin_action-fotor-bg-remover-20240323205140", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.IO.UnmanagedMemoryStream, аналогичного System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream music {
+            get {
+                return ResourceManager.GetStream("music", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap music_fotor_bg_remover_20240326202026 {
+            get {
+                object obj = ResourceManager.GetObject("music-fotor-bg-remover-20240326202026", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] music_mp3 {
+            get {
+                object obj = ResourceManager.GetObject("music_mp3", resourceCulture);
+                return ((byte[])(obj));
             }
         }
         
@@ -616,6 +665,16 @@ namespace Tamagochi.Properties {
         internal static System.Drawing.Bitmap soap_and_bubbles_icon {
             get {
                 object obj = ResourceManager.GetObject("soap-and-bubbles-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sound_fotor_bg_remover_20240326202045 {
+            get {
+                object obj = ResourceManager.GetObject("sound-fotor-bg-remover-20240326202045", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

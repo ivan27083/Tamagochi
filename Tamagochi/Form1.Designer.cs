@@ -764,7 +764,9 @@ namespace Tamagochi
             this.Controls.Add(this.pb_pet);
             this.Controls.Add(this.btn_next);
             this.Controls.Add(this.btn_prev);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "Tamagochi";
             this.Text = "Tamagochi";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);

@@ -11,7 +11,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Tamagochi.Classes;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.TaskbarClock;
-
+using System.Media;
+using WMPLib;
 namespace Tamagochi
 {
     public partial class Tamagochi : Form
@@ -19,6 +20,8 @@ namespace Tamagochi
         static Pet pet;
         int current_room;
         public string check_name;
+        public static WindowsMediaPlayer wmp;
+        
         public Tamagochi()
         {
             InitializeComponent();
@@ -29,13 +32,18 @@ namespace Tamagochi
             current_room = 0;
             update_progress();
             tbc_menu.DrawMode = TabDrawMode.OwnerDrawFixed;
-            System.Media.SoundPlayer player = new System.Media.SoundPlayer();
-            player.SoundLocation = "soundFile.wav";
-            player.Play();
+            wmp_init();
         }
         public static void set_pet(string str)
         {
             pet = new Pet(str);
+        }
+        private void wmp_init()
+        {
+            wmp = new WindowsMediaPlayer();
+            wmp.URL = @"C:\Учеба\2 курс\2 семестр\Практика\Tamagochi\Tamagochi\Resources\music.wav";
+            wmp.controls.play();
+            wmp.settings.setMode("loop", true);
         }
         void update_progress()
         {
