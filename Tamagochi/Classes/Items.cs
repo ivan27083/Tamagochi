@@ -15,8 +15,8 @@ namespace Tamagochi.Classes
 
         public int get_id() { return id; }
         public void set_id(int value) { this.id = value; }
-        public int get_action(){ return id;}
-        public void set_action(int value){this.id = value;}
+        public int get_action(){ return action;}
+        public void set_action(int value){this.action = value;}
         public string get_name() { return name;}
         public void set_name(string value) { this.name = value;}
 

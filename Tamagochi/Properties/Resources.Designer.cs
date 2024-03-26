@@ -273,6 +273,16 @@ namespace Tamagochi.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap fla {
+            get {
+                object obj = ResourceManager.GetObject("fla", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap flat_arrow_collection_fotor {
             get {
                 object obj = ResourceManager.GetObject("flat-arrow-collection-fotor", resourceCulture);
@@ -566,6 +576,16 @@ namespace Tamagochi.Properties {
         internal static System.Drawing.Bitmap setting_fotor_bg_remover_2024032421319 {
             get {
                 object obj = ResourceManager.GetObject("setting-fotor-bg-remover-2024032421319", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap setting_fotor_bg_remover_2024032421319_3 {
+            get {
+                object obj = ResourceManager.GetObject("setting-fotor-bg-remover-2024032421319_3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

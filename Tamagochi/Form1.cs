@@ -10,15 +10,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Tamagochi.Classes;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.TaskbarClock;
 
 namespace Tamagochi
 {
-    public partial class Form1 : Form
+    public partial class Tamagochi : Form
     {
         static Pet pet;
         int current_room;
         public string check_name;
-        public Form1()
+        public Tamagochi()
         {
             InitializeComponent();
             out_file();
@@ -26,10 +27,24 @@ namespace Tamagochi
             update_pet_image();
             timer.Start();
             current_room = 0;
+            update_progress();
+            tbc_menu.DrawMode = TabDrawMode.OwnerDrawFixed;
+            System.Media.SoundPlayer player = new System.Media.SoundPlayer();
+            player.SoundLocation = "soundFile.wav";
+            player.Play();
         }
         public static void set_pet(string str)
         {
             pet = new Pet(str);
+        }
+        void update_progress()
+        {
+            pb_health.Value = pet.get_hp();
+            pb_hunger.Value = pet.get_satiety();
+            pb_happiness.Value = pet.get_happy();
+            pb_cleanliness.Value = pet.get_clean();
+            lb_lvl.Text = "Lvl. " + pet.get_lvl().ToString();
+            pb_exp.Value = pet.get_experience();
         }
         private void update_pet_image()
         {
@@ -46,9 +61,11 @@ namespace Tamagochi
 
         private void btn_pets_Click(object sender, EventArgs e)
         {
+            in_file();
             Pets pets = new Pets();
             pets.ShowDialog();
             update_pet_image();
+            update_progress();
         }
         private void btn_prev_Click(object sender, EventArgs e)
         {
@@ -121,14 +138,13 @@ namespace Tamagochi
         {
             System.Windows.Forms.PictureBox pic = (System.Windows.Forms.PictureBox)sender;
             pet.get_item(e.Data.GetData(DataFormats.Text).ToString());
+            update_progress();
         }
 
         private void timer_Tick(object sender, EventArgs e)
         {
-            pb_health.Value = pet.get_hp();
-            pb_hunger.Value = pet.get_satiety();
-            pb_happiness.Value = pet.get_happy();
-            pb_cleanliness.Value = pet.get_clean();
+            pet.update();
+            update_progress();
         }
         public void in_file()
         {
@@ -148,6 +164,7 @@ namespace Tamagochi
             {
                 StreamReader reader = new StreamReader(file_path);
                 string line;
+                DateTime time;
                 while ((line = reader.ReadLine()) != null)
                 {
                     string[] values = line.Split(',');
@@ -155,7 +172,8 @@ namespace Tamagochi
                     {
                         string name = values[0];
                         pet = new Pet(name);
-                        DateTime time = DateTime.Parse(values[1]);
+                        time = DateTime.Parse(values[1]);
+                        pet.update_time(time);
                     }
                 }
                 reader.Close();
@@ -164,11 +182,49 @@ namespace Tamagochi
             {
                 pet = new Pet();
             }
-            
         }
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
             in_file();
+        }
+
+        private void tbc_menu_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            current_room = tbc_menu.SelectedIndex;
+            check_room();
+        }
+
+        private void tbc_menu_DrawItem(object sender, DrawItemEventArgs e)
+        {
+            e.Graphics.SetClip(e.Bounds);
+            string text = tbc_menu.TabPages[e.Index].Text;
+            SizeF sz = e.Graphics.MeasureString(text, e.Font);
+            System.Drawing.Color color;
+            switch (current_room)
+            {
+                case 0: color = System.Drawing.Color.Bisque;
+                    break;
+                case 1: color = System.Drawing.Color.Lavender;
+                    break;
+                case 2:
+                    color = System.Drawing.Color.MistyRose;
+                    break;
+                case 3:
+                    color = System.Drawing.Color.Khaki;
+                    break;
+                default: color = System.Drawing.Color.White; break;
+            }
+            bool bSelected = (e.State & DrawItemState.Selected) == DrawItemState.Selected;
+            using (SolidBrush b = new SolidBrush(bSelected ? color : System.Drawing.Color.SeaShell))
+                e.Graphics.FillRectangle(b, e.Bounds);
+
+            using (SolidBrush b = new SolidBrush(bSelected ? SystemColors.ControlText : SystemColors.ControlText))
+                e.Graphics.DrawString(text, e.Font, b, e.Bounds.X + 2, e.Bounds.Y + (e.Bounds.Height - sz.Height) / 2);
+
+            if (tbc_menu.SelectedIndex == e.Index)
+                e.DrawFocusRectangle();
+
+            e.Graphics.ResetClip();
         }
     }
 }

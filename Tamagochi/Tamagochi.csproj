@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="extendeddotnet.controls">
+      <HintPath>..\..\..\..\..\..\Users\Ivan\Downloads\extendeddotnet.controls.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -207,12 +210,6 @@
     <None Include="Resources\game_fon.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\eat_fon.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\hospital_fon.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\apple_action-fotor-bg-remover-20240323205115.png" />
   </ItemGroup>
   <ItemGroup>
@@ -277,6 +274,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\arrow21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setting-fotor-bg-remover-2024032421319_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fla.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eat_fon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hospital_fon.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -17,6 +17,7 @@ namespace Tamagochi.Classes
         int experience;
         int clean;
         int happy;
+        int lvl;
 
         public int get_id() { return id; }
         public void set_id(int value) { this.id = value; }
@@ -32,6 +33,8 @@ namespace Tamagochi.Classes
         public void set_clean(int value) { this.clean = value; }
         public int get_happy() { return happy; }
         public void set_happy(int value) { this.happy = value; }
+        public int get_lvl() { return lvl; }
+        public void set_lvl(int value) { this.lvl = value; }
 
         public Pet()
         {
@@ -42,6 +45,7 @@ namespace Tamagochi.Classes
             experience = 0;
             clean = 100;
             happy = 100;
+            lvl = 1;
         }
 
         public Pet(string new_name)
@@ -56,7 +60,7 @@ namespace Tamagochi.Classes
             string file_path = name + ".txt";
             if (!File.Exists(file_path))
                 File.Create(file_path).Close();
-            string s= $"{id},{hp},{satiety},{experience},{clean},{happy}";
+            string s= $"{id},{hp},{satiety},{experience},{clean},{happy},{lvl}";
             File.WriteAllText(file_path, s);
             //StreamWriter sw = new StreamWriter(file_path, true, Encoding.ASCII);
             //sw.WriteLine($"{1},{2},{3},{4},{5},{6}",id, hp, satiety, experience, clean, happy);
@@ -73,7 +77,7 @@ namespace Tamagochi.Classes
                 while ((line = reader.ReadLine()) != null)
                 {
                     string[] values = line.Split(',');
-                    if (values.Length == 6)
+                    if (values.Length == 7)
                     {
                         id = int.Parse(values[0]);
                         hp = int.Parse(values[1]);
@@ -81,6 +85,7 @@ namespace Tamagochi.Classes
                         experience = int.Parse(values[3]);
                         clean = int.Parse(values[4]);
                         happy = int.Parse(values[5]);
+                        lvl = int.Parse(values[6]);
                     }
                 }
                 reader.Close();
@@ -92,29 +97,18 @@ namespace Tamagochi.Classes
                 experience = 0;
                 clean = 100;
                 happy = 100;
+                lvl = 1;
             }
         }
 
 
-
-        void decrease_satiety(int food)
-        {
-            if (food==1) satiety--;
-            //if яблоко hunger-=1;  if кекс hunger-=2; if курица hunger-=3; if хотдог hunger-=2; if салат hunger-=1;
-        }
-
-        void increase_hp()
-        {
-            //if шприц 
-            hp--;
-        }
-
         void increase_experience(int a)
         {
             experience += a;
-            if (experience%100==0)
+            if (experience >= 100)
             {
-                //менять label с уровнем и его progressbar
+                experience -= 100;
+                lvl++;
             }
         }
 
@@ -122,7 +116,7 @@ namespace Tamagochi.Classes
         {
             int prev_sat = satiety;
             TimeSpan time = DateTime.Now - prevtime;
-            int x = int.Parse(time.TotalHours.ToString());
+            int x = Convert.ToInt32(double.Parse(time.TotalHours.ToString()));
 
             int interval =(int)Math.Ceiling(prev_sat / 5.0);
             if (x > interval)
@@ -137,12 +131,31 @@ namespace Tamagochi.Classes
 
         public void update()
         {
-            /*TimeSpan time = DateTime.Now - prevtime;
-            int x = int.Parse(time.TotalHours.ToString());
-            //проверка с таймеро
-            if (satiety <= 0) 
-                hp-=10;//каждые 5 минут
-            */
+            if (satiety >= 5) satiety -= 5;
+            else satiety = 0;
+            if (clean >=1) clean--;
+            else clean = 0;
+            if (happy >=2) happy-=2;
+            else happy = 0;
+
+            if (satiety <= 0 && hp >= 5) hp -= 5;
+            else if (satiety <= 0 && hp < 5) hp = 0;
+
+            if (clean <= 0 && hp >= 1) hp --;
+            else if (clean <= 0 && hp < 1) hp = 0;
+
+            if (happy <= 0 && hp >= 2) hp -= 2;
+            else if (happy <= 0 && hp < 2) hp = 0;
+
+            if (hp == 0)
+            {
+                MessageBox.Show("Ваш питомец сбежал!","Упс...");
+                string file_path = name + ".txt";
+                File.Delete(file_path);
+                Pets pets = new Pets();
+                pets.ShowDialog();
+            }
+
         }
 
         public void get_item(string name_picbox)
@@ -153,22 +166,51 @@ namespace Tamagochi.Classes
             switch (var)
             {
                 case 1://душ 
-                    if (clean + act <= 100) { clean += act; increase_experience(act); }
-                    else clean = 100;
+                    if (clean != 100)
+                    {
+                        if (clean + act <= 100) clean += act;
+                        else clean = 100;
+                        increase_experience(5);
+                    }
                     break;
                 case 2: //кухня 
-                    if (satiety + act <=100) { satiety += act; increase_experience(act); }
-                    else satiety = 100;
+                    if (satiety != 100)
+                    {
+                        if (satiety + act <= 100) satiety += act;
+                        else satiety = 100;
+
+                        if (clean - act / 2 >= 0) clean -= act / 2;
+                        else clean = 0;
+                        increase_experience(10);
+                    }
                     break;
                 case 3: //лечение 
-                    if (hp + act <= 100) {hp += act; increase_experience(act); }
-                    else hp = 100;
-                    break;
-                case 4://игра 
-                    if (happy + act <= 100) { happy += act; increase_experience(act); }
-                    else happy = 100;
-                    break;
+                    if (hp != 100)
+                    {
+                        if (hp + act <= 100) hp += act;
+                        else hp = 100;
 
+                        if (happy - 5 >= 0) happy -= 5;
+                        else happy = 0;
+                        increase_experience(5);
+                    }
+                    break;
+                case 4://игра
+                    if (happy != 100)
+                    {
+                        if (happy + act <= 100)
+                        {
+                            happy += act;
+                        }
+                        else happy = 100;
+
+                        if (satiety - act >= 0) satiety -= act;
+                        else satiety = 0;
+                        if (clean - act / 2 >= 0) clean -= act / 2;
+                        else clean = 0;
+                        increase_experience(20);
+                    }
+                    break;
             }
         }
 

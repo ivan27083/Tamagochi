@@ -127,11 +127,11 @@
   <data name="abfe78c9c67376a6c2a9732b9afe0e4a" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\abfe78c9c67376a6c2a9732b9afe0e4a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="muffin_action" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\muffin_action.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="hotdog_action" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\hotdog_action.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="lion" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\lion-fotor-bg-remover-202403241918491.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="arrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\arrow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -162,6 +162,9 @@
   </data>
   <data name="chicken_action" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\chicken_action.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="setting-fotor-bg-remover-2024032421319_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\setting-fotor-bg-remover-2024032421319_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="i (18)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\i (18).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -208,8 +211,8 @@
   <data name="salat_action-fotor-bg-remover-20240323205128" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\salat_action-fotor-bg-remover-20240323205128.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="bath_fon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bath_fon.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="lion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lion-fotor-bg-remover-202403241918491.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="soap_action-transformed" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\soap_action-transformed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -231,6 +234,9 @@
   </data>
   <data name="tiger" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tiger2-fotor-bg-remover-20240324193029.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="arrow21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\arrow21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="apple_action" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\apple_action.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -283,8 +289,8 @@
   <data name="basketball_action'-fotor-bg-remover-20240323205352" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\basketball_action'-fotor-bg-remover-20240323205352.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="muffin_action" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\muffin_action.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="bath_fon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bath_fon.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="mea1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\mea1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -295,7 +301,7 @@
   <data name="hospital_fon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\hospital_fon.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="arrow21" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\arrow21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="fla" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fla.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

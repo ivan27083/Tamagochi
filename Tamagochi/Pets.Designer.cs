@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Pets));
             this.dog = new System.Windows.Forms.Button();
             this.lion = new System.Windows.Forms.Button();
             this.tiger = new System.Windows.Forms.Button();
@@ -92,6 +93,7 @@
             this.Controls.Add(this.cow);
             this.Controls.Add(this.lion);
             this.Controls.Add(this.dog);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Pets";
             this.Text = "Pets";
             this.ResumeLayout(false);

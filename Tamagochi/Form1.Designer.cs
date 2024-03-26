@@ -5,7 +5,7 @@ using System.Windows.Forms;
 
 namespace Tamagochi
 {
-    partial class Form1
+    partial class Tamagochi
     {
         /// <summary>
         /// Обязательная переменная конструктора.
@@ -34,12 +34,10 @@ namespace Tamagochi
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Tamagochi));
             this.btn_prev = new System.Windows.Forms.Button();
             this.btn_next = new System.Windows.Forms.Button();
-            this.pb_health = new System.Windows.Forms.ProgressBar();
-            this.pb_hunger = new System.Windows.Forms.ProgressBar();
-            this.pb_exp = new System.Windows.Forms.ProgressBar();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lb_lvl = new System.Windows.Forms.Label();
             this.btn_settings = new System.Windows.Forms.Button();
             this.btn_pets = new System.Windows.Forms.Button();
             this.pbox_hunger = new System.Windows.Forms.PictureBox();
@@ -73,10 +71,13 @@ namespace Tamagochi
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.timer = new System.Windows.Forms.Timer(this.components);
-            this.pb_happiness = new System.Windows.Forms.ProgressBar();
             this.pbox_happiness = new System.Windows.Forms.PictureBox();
-            this.pb_cleanliness = new System.Windows.Forms.ProgressBar();
             this.pbox_cleanliness = new System.Windows.Forms.PictureBox();
+            this.pb_exp = new ExtendedDotNET.Controls.Progress.ProgressBar();
+            this.pb_health = new ExtendedDotNET.Controls.Progress.ProgressBar();
+            this.pb_hunger = new ExtendedDotNET.Controls.Progress.ProgressBar();
+            this.pb_happiness = new ExtendedDotNET.Controls.Progress.ProgressBar();
+            this.pb_cleanliness = new ExtendedDotNET.Controls.Progress.ProgressBar();
             ((System.ComponentModel.ISupportInitialize)(this.pbox_hunger)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbox_health)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_pet)).BeginInit();
@@ -109,8 +110,8 @@ namespace Tamagochi
             // 
             // btn_prev
             // 
-            this.btn_prev.BackColor = System.Drawing.Color.Transparent;
-            this.btn_prev.BackgroundImage = global::Tamagochi.Properties.Resources.arrow;
+            this.btn_prev.BackColor = System.Drawing.Color.Bisque;
+            this.btn_prev.BackgroundImage = global::Tamagochi.Properties.Resources.fla;
             this.btn_prev.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_prev.Location = new System.Drawing.Point(64, 350);
             this.btn_prev.Name = "btn_prev";
@@ -121,8 +122,8 @@ namespace Tamagochi
             // 
             // btn_next
             // 
-            this.btn_next.BackColor = System.Drawing.Color.Transparent;
-            this.btn_next.BackgroundImage = global::Tamagochi.Properties.Resources.arrow2;
+            this.btn_next.BackColor = System.Drawing.Color.Bisque;
+            this.btn_next.BackgroundImage = global::Tamagochi.Properties.Resources.flat_arrow_collection_fotor;
             this.btn_next.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_next.Location = new System.Drawing.Point(1096, 350);
             this.btn_next.Name = "btn_next";
@@ -132,49 +133,25 @@ namespace Tamagochi
             this.btn_next.UseVisualStyleBackColor = false;
             this.btn_next.Click += new System.EventHandler(this.btn_next_Click);
             // 
-            // pb_health
+            // lb_lvl
             // 
-            this.pb_health.BackColor = System.Drawing.SystemColors.Control;
-            this.pb_health.ForeColor = System.Drawing.Color.Green;
-            this.pb_health.Location = new System.Drawing.Point(933, 53);
-            this.pb_health.Name = "pb_health";
-            this.pb_health.Size = new System.Drawing.Size(229, 25);
-            this.pb_health.TabIndex = 6;
-            // 
-            // pb_hunger
-            // 
-            this.pb_hunger.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.pb_hunger.Location = new System.Drawing.Point(933, 109);
-            this.pb_hunger.Name = "pb_hunger";
-            this.pb_hunger.Size = new System.Drawing.Size(229, 25);
-            this.pb_hunger.TabIndex = 7;
-            // 
-            // pb_exp
-            // 
-            this.pb_exp.Location = new System.Drawing.Point(521, 137);
-            this.pb_exp.Name = "pb_exp";
-            this.pb_exp.Size = new System.Drawing.Size(229, 29);
-            this.pb_exp.TabIndex = 8;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(437, 137);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(79, 32);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "Lvl 1";
+            this.lb_lvl.AutoSize = true;
+            this.lb_lvl.BackColor = System.Drawing.Color.Transparent;
+            this.lb_lvl.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lb_lvl.ForeColor = System.Drawing.Color.Blue;
+            this.lb_lvl.Location = new System.Drawing.Point(437, 137);
+            this.lb_lvl.Name = "lb_lvl";
+            this.lb_lvl.Size = new System.Drawing.Size(79, 32);
+            this.lb_lvl.TabIndex = 9;
+            this.lb_lvl.Text = "Lvl 1";
             // 
             // btn_settings
             // 
-            this.btn_settings.BackColor = System.Drawing.Color.Transparent;
-            this.btn_settings.BackgroundImage = global::Tamagochi.Properties.Resources.setting_fotor_bg_remover_2024032421319;
+            this.btn_settings.BackColor = System.Drawing.Color.Bisque;
+            this.btn_settings.BackgroundImage = global::Tamagochi.Properties.Resources.setting_fotor_bg_remover_2024032421319_3;
             this.btn_settings.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_settings.ForeColor = System.Drawing.Color.Transparent;
-            this.btn_settings.Location = new System.Drawing.Point(153, 53);
+            this.btn_settings.Location = new System.Drawing.Point(28, 28);
             this.btn_settings.Name = "btn_settings";
             this.btn_settings.Size = new System.Drawing.Size(55, 50);
             this.btn_settings.TabIndex = 11;
@@ -185,7 +162,7 @@ namespace Tamagochi
             // 
             this.btn_pets.BackgroundImage = global::Tamagochi.Properties.Resources.pet_logo;
             this.btn_pets.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_pets.Location = new System.Drawing.Point(153, 137);
+            this.btn_pets.Location = new System.Drawing.Point(139, 95);
             this.btn_pets.Name = "btn_pets";
             this.btn_pets.Size = new System.Drawing.Size(112, 95);
             this.btn_pets.TabIndex = 10;
@@ -502,6 +479,8 @@ namespace Tamagochi
             this.tbc_menu.SelectedIndex = 0;
             this.tbc_menu.Size = new System.Drawing.Size(716, 144);
             this.tbc_menu.TabIndex = 20;
+            this.tbc_menu.DrawItem += new System.Windows.Forms.DrawItemEventHandler(this.tbc_menu_DrawItem);
+            this.tbc_menu.SelectedIndexChanged += new System.EventHandler(this.tbc_menu_SelectedIndexChanged);
             // 
             // tabPage1
             // 
@@ -563,16 +542,8 @@ namespace Tamagochi
             // 
             // timer
             // 
-            this.timer.Interval = 10;
+            this.timer.Interval = 10000;
             this.timer.Tick += new System.EventHandler(this.timer_Tick);
-            // 
-            // pb_happiness
-            // 
-            this.pb_happiness.ForeColor = System.Drawing.Color.Gold;
-            this.pb_happiness.Location = new System.Drawing.Point(933, 165);
-            this.pb_happiness.Name = "pb_happiness";
-            this.pb_happiness.Size = new System.Drawing.Size(229, 25);
-            this.pb_happiness.TabIndex = 22;
             // 
             // pbox_happiness
             // 
@@ -585,14 +556,6 @@ namespace Tamagochi
             this.pbox_happiness.TabIndex = 21;
             this.pbox_happiness.TabStop = false;
             // 
-            // pb_cleanliness
-            // 
-            this.pb_cleanliness.ForeColor = System.Drawing.Color.Plum;
-            this.pb_cleanliness.Location = new System.Drawing.Point(933, 221);
-            this.pb_cleanliness.Name = "pb_cleanliness";
-            this.pb_cleanliness.Size = new System.Drawing.Size(229, 25);
-            this.pb_cleanliness.TabIndex = 24;
-            // 
             // pbox_cleanliness
             // 
             this.pbox_cleanliness.BackColor = System.Drawing.Color.Transparent;
@@ -604,7 +567,177 @@ namespace Tamagochi
             this.pbox_cleanliness.TabIndex = 23;
             this.pbox_cleanliness.TabStop = false;
             // 
-            // Form1
+            // pb_exp
+            // 
+            this.pb_exp.BarOffset = 1;
+            this.pb_exp.Caption = "Progress";
+            this.pb_exp.CaptionColor = System.Drawing.Color.Black;
+            this.pb_exp.CaptionMode = ExtendedDotNET.Controls.Progress.ProgressCaptionMode.None;
+            this.pb_exp.CaptionShadowColor = System.Drawing.Color.White;
+            this.pb_exp.ChangeByMouse = false;
+            this.pb_exp.DashSpace = 2;
+            this.pb_exp.DashWidth = 5;
+            this.pb_exp.Edge = ExtendedDotNET.Controls.Progress.ProgressBarEdge.Rounded;
+            this.pb_exp.EdgeColor = System.Drawing.Color.Gray;
+            this.pb_exp.EdgeLightColor = System.Drawing.Color.LightGray;
+            this.pb_exp.EdgeWidth = 1;
+            this.pb_exp.FloodPercentage = 0.2F;
+            this.pb_exp.FloodStyle = ExtendedDotNET.Controls.Progress.ProgressFloodStyle.Standard;
+            this.pb_exp.Invert = false;
+            this.pb_exp.Location = new System.Drawing.Point(522, 137);
+            this.pb_exp.MainColor = System.Drawing.Color.RoyalBlue;
+            this.pb_exp.Maximum = 100;
+            this.pb_exp.Minimum = 0;
+            this.pb_exp.Name = "pb_exp";
+            this.pb_exp.Orientation = ExtendedDotNET.Controls.Progress.ProgressBarDirection.Horizontal;
+            this.pb_exp.ProgressBackColor = System.Drawing.Color.SeaShell;
+            this.pb_exp.ProgressBarStyle = ExtendedDotNET.Controls.Progress.ProgressStyle.Solid;
+            this.pb_exp.SecondColor = System.Drawing.Color.White;
+            this.pb_exp.Shadow = true;
+            this.pb_exp.ShadowOffset = 1;
+            this.pb_exp.Size = new System.Drawing.Size(258, 32);
+            this.pb_exp.Step = 1;
+            this.pb_exp.TabIndex = 25;
+            this.pb_exp.TextAntialias = true;
+            this.pb_exp.Value = 33;
+            // 
+            // pb_health
+            // 
+            this.pb_health.BarOffset = 1;
+            this.pb_health.Caption = "Progress";
+            this.pb_health.CaptionColor = System.Drawing.Color.Black;
+            this.pb_health.CaptionMode = ExtendedDotNET.Controls.Progress.ProgressCaptionMode.None;
+            this.pb_health.CaptionShadowColor = System.Drawing.Color.White;
+            this.pb_health.ChangeByMouse = false;
+            this.pb_health.DashSpace = 2;
+            this.pb_health.DashWidth = 5;
+            this.pb_health.Edge = ExtendedDotNET.Controls.Progress.ProgressBarEdge.Rounded;
+            this.pb_health.EdgeColor = System.Drawing.Color.Gray;
+            this.pb_health.EdgeLightColor = System.Drawing.Color.LightGray;
+            this.pb_health.EdgeWidth = 1;
+            this.pb_health.FloodPercentage = 0.2F;
+            this.pb_health.FloodStyle = ExtendedDotNET.Controls.Progress.ProgressFloodStyle.Standard;
+            this.pb_health.Invert = false;
+            this.pb_health.Location = new System.Drawing.Point(933, 54);
+            this.pb_health.MainColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))));
+            this.pb_health.Maximum = 100;
+            this.pb_health.Minimum = 0;
+            this.pb_health.Name = "pb_health";
+            this.pb_health.Orientation = ExtendedDotNET.Controls.Progress.ProgressBarDirection.Horizontal;
+            this.pb_health.ProgressBackColor = System.Drawing.Color.SeaShell;
+            this.pb_health.ProgressBarStyle = ExtendedDotNET.Controls.Progress.ProgressStyle.Solid;
+            this.pb_health.SecondColor = System.Drawing.Color.White;
+            this.pb_health.Shadow = true;
+            this.pb_health.ShadowOffset = 1;
+            this.pb_health.Size = new System.Drawing.Size(229, 25);
+            this.pb_health.Step = 1;
+            this.pb_health.TabIndex = 26;
+            this.pb_health.TextAntialias = true;
+            this.pb_health.Value = 33;
+            // 
+            // pb_hunger
+            // 
+            this.pb_hunger.BarOffset = 1;
+            this.pb_hunger.Caption = "Progress";
+            this.pb_hunger.CaptionColor = System.Drawing.Color.Black;
+            this.pb_hunger.CaptionMode = ExtendedDotNET.Controls.Progress.ProgressCaptionMode.None;
+            this.pb_hunger.CaptionShadowColor = System.Drawing.Color.White;
+            this.pb_hunger.ChangeByMouse = false;
+            this.pb_hunger.DashSpace = 2;
+            this.pb_hunger.DashWidth = 5;
+            this.pb_hunger.Edge = ExtendedDotNET.Controls.Progress.ProgressBarEdge.Rounded;
+            this.pb_hunger.EdgeColor = System.Drawing.Color.Gray;
+            this.pb_hunger.EdgeLightColor = System.Drawing.Color.LightGray;
+            this.pb_hunger.EdgeWidth = 1;
+            this.pb_hunger.FloodPercentage = 0.2F;
+            this.pb_hunger.FloodStyle = ExtendedDotNET.Controls.Progress.ProgressFloodStyle.Standard;
+            this.pb_hunger.Invert = false;
+            this.pb_hunger.Location = new System.Drawing.Point(933, 113);
+            this.pb_hunger.MainColor = System.Drawing.Color.Coral;
+            this.pb_hunger.Maximum = 100;
+            this.pb_hunger.Minimum = 0;
+            this.pb_hunger.Name = "pb_hunger";
+            this.pb_hunger.Orientation = ExtendedDotNET.Controls.Progress.ProgressBarDirection.Horizontal;
+            this.pb_hunger.ProgressBackColor = System.Drawing.Color.SeaShell;
+            this.pb_hunger.ProgressBarStyle = ExtendedDotNET.Controls.Progress.ProgressStyle.Solid;
+            this.pb_hunger.SecondColor = System.Drawing.Color.White;
+            this.pb_hunger.Shadow = true;
+            this.pb_hunger.ShadowOffset = 1;
+            this.pb_hunger.Size = new System.Drawing.Size(229, 25);
+            this.pb_hunger.Step = 1;
+            this.pb_hunger.TabIndex = 27;
+            this.pb_hunger.TextAntialias = true;
+            this.pb_hunger.Value = 33;
+            // 
+            // pb_happiness
+            // 
+            this.pb_happiness.BarOffset = 1;
+            this.pb_happiness.Caption = "Progress";
+            this.pb_happiness.CaptionColor = System.Drawing.Color.Black;
+            this.pb_happiness.CaptionMode = ExtendedDotNET.Controls.Progress.ProgressCaptionMode.None;
+            this.pb_happiness.CaptionShadowColor = System.Drawing.Color.White;
+            this.pb_happiness.ChangeByMouse = false;
+            this.pb_happiness.DashSpace = 2;
+            this.pb_happiness.DashWidth = 5;
+            this.pb_happiness.Edge = ExtendedDotNET.Controls.Progress.ProgressBarEdge.Rounded;
+            this.pb_happiness.EdgeColor = System.Drawing.Color.Gray;
+            this.pb_happiness.EdgeLightColor = System.Drawing.Color.LightGray;
+            this.pb_happiness.EdgeWidth = 1;
+            this.pb_happiness.FloodPercentage = 0.2F;
+            this.pb_happiness.FloodStyle = ExtendedDotNET.Controls.Progress.ProgressFloodStyle.Standard;
+            this.pb_happiness.Invert = false;
+            this.pb_happiness.Location = new System.Drawing.Point(933, 166);
+            this.pb_happiness.MainColor = System.Drawing.Color.Gold;
+            this.pb_happiness.Maximum = 100;
+            this.pb_happiness.Minimum = 0;
+            this.pb_happiness.Name = "pb_happiness";
+            this.pb_happiness.Orientation = ExtendedDotNET.Controls.Progress.ProgressBarDirection.Horizontal;
+            this.pb_happiness.ProgressBackColor = System.Drawing.Color.SeaShell;
+            this.pb_happiness.ProgressBarStyle = ExtendedDotNET.Controls.Progress.ProgressStyle.Solid;
+            this.pb_happiness.SecondColor = System.Drawing.Color.White;
+            this.pb_happiness.Shadow = true;
+            this.pb_happiness.ShadowOffset = 1;
+            this.pb_happiness.Size = new System.Drawing.Size(229, 25);
+            this.pb_happiness.Step = 1;
+            this.pb_happiness.TabIndex = 28;
+            this.pb_happiness.TextAntialias = true;
+            this.pb_happiness.Value = 33;
+            // 
+            // pb_cleanliness
+            // 
+            this.pb_cleanliness.BarOffset = 1;
+            this.pb_cleanliness.Caption = "Progress";
+            this.pb_cleanliness.CaptionColor = System.Drawing.Color.Black;
+            this.pb_cleanliness.CaptionMode = ExtendedDotNET.Controls.Progress.ProgressCaptionMode.None;
+            this.pb_cleanliness.CaptionShadowColor = System.Drawing.Color.White;
+            this.pb_cleanliness.ChangeByMouse = false;
+            this.pb_cleanliness.DashSpace = 2;
+            this.pb_cleanliness.DashWidth = 5;
+            this.pb_cleanliness.Edge = ExtendedDotNET.Controls.Progress.ProgressBarEdge.Rounded;
+            this.pb_cleanliness.EdgeColor = System.Drawing.Color.Gray;
+            this.pb_cleanliness.EdgeLightColor = System.Drawing.Color.LightGray;
+            this.pb_cleanliness.EdgeWidth = 1;
+            this.pb_cleanliness.FloodPercentage = 0.2F;
+            this.pb_cleanliness.FloodStyle = ExtendedDotNET.Controls.Progress.ProgressFloodStyle.Standard;
+            this.pb_cleanliness.Invert = false;
+            this.pb_cleanliness.Location = new System.Drawing.Point(933, 221);
+            this.pb_cleanliness.MainColor = System.Drawing.Color.Plum;
+            this.pb_cleanliness.Maximum = 100;
+            this.pb_cleanliness.Minimum = 0;
+            this.pb_cleanliness.Name = "pb_cleanliness";
+            this.pb_cleanliness.Orientation = ExtendedDotNET.Controls.Progress.ProgressBarDirection.Horizontal;
+            this.pb_cleanliness.ProgressBackColor = System.Drawing.Color.White;
+            this.pb_cleanliness.ProgressBarStyle = ExtendedDotNET.Controls.Progress.ProgressStyle.Solid;
+            this.pb_cleanliness.SecondColor = System.Drawing.Color.White;
+            this.pb_cleanliness.Shadow = true;
+            this.pb_cleanliness.ShadowOffset = 1;
+            this.pb_cleanliness.Size = new System.Drawing.Size(229, 25);
+            this.pb_cleanliness.Step = 1;
+            this.pb_cleanliness.TabIndex = 29;
+            this.pb_cleanliness.TextAntialias = true;
+            this.pb_cleanliness.Value = 33;
+            // 
+            // Tamagochi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -612,8 +745,11 @@ namespace Tamagochi
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1246, 789);
             this.Controls.Add(this.pb_cleanliness);
-            this.Controls.Add(this.pbox_cleanliness);
             this.Controls.Add(this.pb_happiness);
+            this.Controls.Add(this.pb_hunger);
+            this.Controls.Add(this.pb_health);
+            this.Controls.Add(this.pb_exp);
+            this.Controls.Add(this.pbox_cleanliness);
             this.Controls.Add(this.pbox_happiness);
             this.Controls.Add(this.tbc_menu);
             this.Controls.Add(this.btn_play);
@@ -622,17 +758,15 @@ namespace Tamagochi
             this.Controls.Add(this.btn_bath);
             this.Controls.Add(this.btn_settings);
             this.Controls.Add(this.btn_pets);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.pb_exp);
-            this.Controls.Add(this.pb_hunger);
-            this.Controls.Add(this.pb_health);
+            this.Controls.Add(this.lb_lvl);
             this.Controls.Add(this.pbox_hunger);
             this.Controls.Add(this.pbox_health);
             this.Controls.Add(this.pb_pet);
             this.Controls.Add(this.btn_next);
             this.Controls.Add(this.btn_prev);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "Tamagochi";
+            this.Text = "Tamagochi";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.pbox_hunger)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbox_health)).EndInit();
@@ -673,10 +807,7 @@ namespace Tamagochi
         private System.Windows.Forms.PictureBox pb_pet;
         private System.Windows.Forms.PictureBox pbox_health;
         private System.Windows.Forms.PictureBox pbox_hunger;
-        private System.Windows.Forms.ProgressBar pb_health;
-        private System.Windows.Forms.ProgressBar pb_hunger;
-        private System.Windows.Forms.ProgressBar pb_exp;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lb_lvl;
         private System.Windows.Forms.Button btn_pets;
         private System.Windows.Forms.Button btn_settings;
         private PictureBox towel_1_5;
@@ -707,10 +838,13 @@ namespace Tamagochi
         private TabPage tabPage3;
         private TabPage tabPage4;
         private Timer timer;
-        private ProgressBar pb_happiness;
         private PictureBox pbox_happiness;
-        private ProgressBar pb_cleanliness;
         private PictureBox pbox_cleanliness;
+        private ExtendedDotNET.Controls.Progress.ProgressBar pb_exp;
+        private ExtendedDotNET.Controls.Progress.ProgressBar pb_health;
+        private ExtendedDotNET.Controls.Progress.ProgressBar pb_hunger;
+        private ExtendedDotNET.Controls.Progress.ProgressBar pb_happiness;
+        private ExtendedDotNET.Controls.Progress.ProgressBar pb_cleanliness;
     }
 }
 
