@@ -473,6 +473,16 @@ namespace Tamagochi.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap nosound_fotor_bg_remover_20240326202036 {
+            get {
+                object obj = ResourceManager.GetObject("nosound-fotor-bg-remover-20240326202036", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap paint_action {
             get {
                 object obj = ResourceManager.GetObject("paint_action", resourceCulture);

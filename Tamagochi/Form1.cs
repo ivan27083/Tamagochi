@@ -21,7 +21,8 @@ namespace Tamagochi
         int current_room;
         public string check_name;
         public static WindowsMediaPlayer wmp;
-        SoundPlayer player = new SoundPlayer();
+        public static SoundPlayer player = new SoundPlayer();
+        public static bool check_state;
         public Tamagochi()
         {
             InitializeComponent();
@@ -163,7 +164,7 @@ namespace Tamagochi
                     break;
             }
             player.SoundLocation = s;
-            if (pet.get_item(e.Data.GetData(DataFormats.Text).ToString()) == 0) player.Play();
+            if (pet.get_item(e.Data.GetData(DataFormats.Text).ToString()) == 0 && !check_state) player.Play();
             update_progress();
         }
 

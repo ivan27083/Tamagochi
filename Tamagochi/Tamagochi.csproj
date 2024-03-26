@@ -335,5 +335,8 @@
   <ItemGroup>
     <None Include="Resources\voda-dush-otkryitie-i-zakryitie_[cut_1sec].wav" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nosound-fotor-bg-remover-20240326202036.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
